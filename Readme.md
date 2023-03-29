@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Журман Юлия](https://up.htmlacademy.ru/adaptive/28/user/2189919).
-* Наставник: `Arthur Litovko`.
+* Наставник: [Arthur Litovko] (https://htmlacademy.ru/profile/id6927).
 
 ---
 
