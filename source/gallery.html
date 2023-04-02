@@ -99,8 +99,13 @@
           <h2 class="video-promotion__title heading">Все еще сомневаетесь?</h2>
           <p class="video-promotion__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
         </header>
-        <div class="video-promotion__video-container">
-          <video poster="img/video-poster.jpg" controls width="280" height="177" muted src="#"></video>
+        <div class="video-promotion__video video">
+          <a class="video-link" href="https://www.youtube.com/watch?v=4fCJTUchxqw&ab_channel=LivinginArizonaNow">
+            <img src="img/video-poster.jpg" alt="Смотреть видео про Седону." width="280" height="177">
+          </a>
+          <button class="video-button" type="button" hidden>
+            <svg width="48" height="54" viewBox="0 0 48 54" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M48 27L0 54L2.42273e-06 0L48 27Z"/></svg>
+          </button>
         </div>
       </section>
     </main>
@@ -123,6 +128,9 @@
           </a>
         </li>
       </ul>
-      <a class="main-footer__copyrights main-footer__copyrights--icon" href="https://htmlacademy.ru">Разработано</a>
+      <small class="main-footer__copyrights">
+        <b class="main-footer__copyrights-text">Разработано</b>
+        <a class="main-footer__copyrights-link" href="https://htmlacademy.ru"></a>
+      </small>
     </footer>
   </body>
