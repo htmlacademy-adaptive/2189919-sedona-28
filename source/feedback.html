@@ -20,13 +20,13 @@
         </span>
         <ul class="main-navigation__list">
           <li class="main-navigation__item">
-            <span class="main-navigation__link">Главная</span>
+            <a class="main-navigation__link" href="index.html">Главная</a>
           </li>
           <li class="main-navigation__item">
             <a class="main-navigation__link" href="gallery.html">Фото и видео</a>
           </li>
           <li class="main-navigation__item main-navigation__item--current">
-            <a class="main-navigation__link" href="feedback.html">Форма отзыва</a>
+            <a class="main-navigation__link" href="#" aria-current="page">Форма отзыва</a>
           </li>
           <li class="main-navigation__item">
             <a class="main-navigation__link" href="https://htmlacademy.ru">HTML ACADEMY</a>
@@ -45,7 +45,7 @@
           <p class="form__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </header>
         <fieldset class="form__fieldset form__fieldset--column form__fieldset--column-left">
-          <legend class="form__title heading">Представьтесь:</legend>
+          <legend class="form__title subheading">Представьтесь:</legend>
           <label class="form__label">
             <span class="form__label-name">Имя*:</span>
             <input class="form__label-input"  type="text" name="name" placeholder="Имя" required>
@@ -60,7 +60,7 @@
           </label>
         </fieldset>
         <fieldset class="form__fieldset form__fieldset--column form__fieldset--column-right">
-          <legend class="form__title heading">Контактная информация:</legend>
+          <legend class="form__title subheading">Контактная информация:</legend>
           <label class="form__label">
             <span class="form__label-name">Контактный телефон*:</span>
             <input class="form__label-input form__label-input--icon form__label-input--icon-phone"  type="text" name="phone" placeholder="Введите телефон" required>
@@ -71,7 +71,7 @@
           </label>
         </fieldset>
         <fieldset class="form__fieldset form__fieldset--radio">
-          <legend class="form__title heading">Ваше общее впечатление:</legend>
+          <legend class="form__title subheading">Ваше общее впечатление:</legend>
           <label class="form__label-radio">
             <input class="form__label-radio-input"  type="radio" name="impression" value="positive" checked>
             <span class="form__label-radio-control"></span>
@@ -89,7 +89,7 @@
           </label>
         </fieldset>
         <fieldset class="form__fieldset form__fieldset--checkbox">
-          <legend class="form__title heading">Посещенные достопримечательности:</legend>
+          <legend class="form__title subheading">Посещенные достопримечательности:</legend>
           <label class="form__label-checkbox">
             <input class="form__label-checkbox-input"  type="checkbox" name="attractions" value="devils-bridge" checked>
             <span class="form__label-checbox-control"></span>
@@ -112,7 +112,7 @@
           </label>
         </fieldset>
         <fieldset class="form__fieldset">
-          <legend class="form__title heading">Опишите свои эмоции:</legend>
+          <legend class="form__title subheading">Опишите свои эмоции:</legend>
           <label class="form__label-textarea">
             <textarea class="form__label-textarea-field" name="message" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
           </label>
