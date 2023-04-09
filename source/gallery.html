@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="img/favicons/favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon.png">
-    <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Галерея</title>
   </head>
   <body class="page__body">
     <h1 class="visually-hidden">Фото и видео Седоны.</h1>
@@ -20,33 +21,33 @@
         </span>
         <ul class="main-navigation__list">
           <li class="main-navigation__item">
-            <span class="main-navigation__link">Главная</span>
-          </li>
-          <li class="main-navigation__item">
-            <a class="main-navigation__link" href="gallery.html">Фото и видео</a>
+            <a class="main-navigation__link button" href="index.html">Главная</a>
           </li>
           <li class="main-navigation__item main-navigation__item--current">
-            <a class="main-navigation__link" href="feedback.html">Форма отзыва</a>
+            <a class="main-navigation__link button" href="#" aria-current="page">Фото и видео</a>
           </li>
           <li class="main-navigation__item">
-            <a class="main-navigation__link" href="https://htmlacademy.ru">HTML ACADEMY</a>
+            <a class="main-navigation__link button" href="feedback.html">Форма отзыва</a>
+          </li>
+          <li class="main-navigation__item">
+            <a class="main-navigation__link button" href="https://htmlacademy.ru">HTML ACADEMY</a>
           </li>
         </ul>
       </nav>
     </header>
-    <main class="main-container">
+    <main class="page__main">
       <section class="intro">
         <img class="intro__image" src="img/intro__image-feedback.svg" alt="Седона" width="229" height="39">
       </section>
       <section class="gallery">
         <header class="gallery__header">
           <h2 class="gallery__heading heading">Фото и видео</h2>
-          <p class="gallery__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+          <p class="gallery__text text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
         </header>
         <ul class="gallery__list">
           <li class="gallery__item gallery__item--wide">
             <a class="gallery__link"  href="#">
-              <img class="gallery__image" src="img/gallery__image 1.jpg" alt="Фотография Седоны 'Неродные просторы'.">
+              <img class="gallery__image" src="img/gallery__image-1.jpg" alt="Фотография Седоны 'Неродные просторы'.">
             </a>
             <div class="gallery__info">
               <div class="gallery__description">
@@ -58,7 +59,7 @@
           </li>
           <li class="gallery__item">
             <a class="gallery__link"  href="#">
-              <img class="gallery__image" src="img/gallery__image 2.jpg" alt="Фотография Седоны 'Местная растительность'.">
+              <img class="gallery__image" src="img/gallery__image-2.jpg" alt="Фотография Седоны 'Местная растительность'.">
             </a>
             <div class="gallery__info">
               <div class="gallery__description">
@@ -70,7 +71,7 @@
           </li>
           <li class="gallery__item">
             <a class="gallery__link"  href="#">
-              <img class="gallery__image" src="img/gallery__image 3.jpg" alt="Фотография Седоны 'Дорога на север'.">
+              <img class="gallery__image" src="img/gallery__image-3.jpg" alt="Фотография Седоны 'Дорога на север'.">
             </a>
             <div class="gallery__info">
               <div class="gallery__description">
@@ -82,7 +83,7 @@
           </li>
           <li class="gallery__item">
             <a class="gallery__link"  href="#">
-              <img class="gallery__image" src="img/gallery__image 3.jpg" alt="Фотография Седоны 'Мост дьявола'.">
+              <img class="gallery__image" src="img/gallery__image-4.jpg" alt="Фотография Седоны 'Мост дьявола'.">
             </a>
             <div class="gallery__info">
               <div class="gallery__description">
@@ -97,7 +98,7 @@
       <section class="video-promotion">
         <header class="video-promotion__header">
           <h2 class="video-promotion__title heading">Все еще сомневаетесь?</h2>
-          <p class="video-promotion__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+          <p class="video-promotion__text text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
         </header>
         <div class="video-promotion__video video">
           <a class="video-link" href="https://www.youtube.com/watch?v=4fCJTUchxqw&ab_channel=LivinginArizonaNow">
@@ -110,7 +111,7 @@
       </section>
     </main>
     <footer class="main-footer">
-      <p class="main-footer__text">#VISITSEDONA</p>
+      <p class="main-footer__text heading heading--big">#VISITSEDONA</p>
       <ul class="main-footer__social social">
         <li class="social__item">
           <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">

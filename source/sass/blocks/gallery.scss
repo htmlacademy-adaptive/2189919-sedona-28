@@ -1,0 +1,11 @@
+@use "../global/variables" as *;
+
+.gallery__title {
+  font: 700 14px/21px $font-primary;
+  color: $color-primary-dark;
+}
+
+.gallery__text {
+  font: 400 14px/21px $font-primary;
+  color: $color-primary;
+}

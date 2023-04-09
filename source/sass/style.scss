@@ -1,1 +1,20 @@
-// Начните писать стили здесь
+@use "global/global.scss";
+@use "global/fonts.scss";
+@use "global/variables.scss";
+@use "blocks/subheading.scss";
+@use "blocks/heading.scss";
+@use "blocks/text.scss";
+@use "blocks/page.scss";
+@use "blocks/visually-hidden.scss";
+@use "blocks/button.scss";
+@use "blocks/main-navigation.scss";
+@use "blocks/intro.scss";
+@use "blocks/advantages.scss";
+@use "blocks/hotels.scss";
+@use "blocks/map.scss";
+@use "blocks/main-footer.scss";
+@use "blocks/social.scss";
+@use "blocks/gallery.scss";
+@use "blocks/video-promotion.scss";
+@use "blocks/video.scss";
+@use "blocks/form.scss";

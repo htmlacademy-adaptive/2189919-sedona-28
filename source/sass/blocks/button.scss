@@ -1,0 +1,28 @@
+@use "../global/variables.scss" as *;
+
+.button {
+  display: block;
+  font: 700 21px/26px $font-primary;
+  border: 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: $color-secondary;
+  background-color: $background-secondary;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $background-secondary-hover;
+  }
+
+  &:active {
+    color: fade-out($color-secondary, 0.7);
+    background-color: $background-secondary-active;
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+    color: $color-secondary;
+    pointer-events: none;
+  }
+}

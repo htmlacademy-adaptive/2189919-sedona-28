@@ -1,0 +1,18 @@
+@use "../global/variables" as *;
+
+.advantages__info--theme--dark {
+  background-color: $background-secondary;
+  color: $color-secondary;
+}
+
+.advantages__item-title {
+  color: inherit;
+}
+
+.advantages__item-text {
+  color: inherit;
+}
+
+.advantages__info--theme--light {
+  background-color: #eeeeee;
+}

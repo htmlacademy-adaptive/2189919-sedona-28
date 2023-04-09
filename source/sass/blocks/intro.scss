@@ -1,0 +1,7 @@
+@use "../global/variables" as *;
+
+.intro {
+  background-image: url(../img/intro.jpg);
+  background-repeat: no-repeat;
+  background-color: fade-out($background-secondary, 0.5);
+}
