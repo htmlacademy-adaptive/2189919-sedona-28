@@ -1,0 +1,14 @@
+@use "../global/variables.scss" as *;
+
+.heading {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: $color-primary-dark;
+}
+
+.heading--big {
+  font-size: 21px;
+}
+

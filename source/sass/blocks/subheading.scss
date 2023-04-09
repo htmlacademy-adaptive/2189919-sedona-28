@@ -1,0 +1,10 @@
+@use "../global/variables.scss" as *;
+
+.subheading {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: $color-primary-dark;
+}
+

@@ -1,0 +1,7 @@
+@use "../global/variables.scss" as *;
+
+.text {
+  font: 400 14px/21px $font-primary;
+  color: $color-primary;
+  text-transform: uppercase;
+}

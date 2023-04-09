@@ -1,0 +1,23 @@
+@use "../global/variables" as *;
+
+.page {
+  height: 100%;
+  background-color: #f2f2f2;
+}
+
+.page__body {
+  min-width: 320px;
+  min-height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  font: 400 14px/21px $font-primary;
+  font-family: $font-primary;
+  color: $color-primary;
+  background-color: $background-primary;
+}
+
+.page__main {
+  flex-grow: 1;
+}
+
