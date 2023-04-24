@@ -1,5 +1,63 @@
 @use "../global/variables" as *;
 
+.main-navigation {
+  position: relative;
+  z-index: 1;
+  min-height: 56px;
+}
+
+.main-navigation__logo {
+  position: absolute;
+  display: block;
+  padding: 0;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.main-navigation__logo-image {
+  display: block;
+}
+
+.main-navigation__list {
+  position: absolute;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+  }
+}
+
+
 .main-navigation__link {
   font-size: 18px;
 }
+
+.main-navigation__button {
+  position: absolute;
+  width: 23px;
+  height: 22px;
+  background: none;
+  border: 0;
+  background-image: url("../../img/main-navigation__button-icon.svg");
+  background-repeat: no-repeat;
+  z-index: 5;
+  top: 17px;
+  right: 20px;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
