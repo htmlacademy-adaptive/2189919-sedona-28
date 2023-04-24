@@ -11,25 +11,26 @@
   <body class="page__body">
     <header class="main-header">
       <nav class="main-navigation main-navigation--js">
-        <button class="main-navigation__button" type="button">
+        <div class="main-navigation__button" type="button">
           <span class="visually-hidden">Открыть меню.</span>
-        </button>
+          <span class="main-navigation__button-lines"></span>
+        </div>
         <span class="main-navigation__logo">
           <span class="visually-hidden">Переход на главную страницу.</span>
           <img class="main-navigation__logo-image" src="img/logo.svg" alt="Логотип сайта.">
         </span>
         <ul class="main-navigation__list">
           <li class="main-navigation__item main-navigation__item--current">
-            <a class="main-navigation__link button" href="#" aria-current="page">Главная</a>
+            <a class="main-navigation__link" href="#" aria-current="page">Главная</a>
           </li>
           <li class="main-navigation__item">
-            <a class="main-navigation__link button" href="gallery.html">Фото и видео</a>
+            <a class="main-navigation__link" href="gallery.html">Фото и видео</a>
           </li>
           <li class="main-navigation__item">
-            <a class="main-navigation__link button" href="feedback.html">Форма отзыва</a>
+            <a class="main-navigation__link" href="feedback.html">Форма отзыва</a>
           </li>
           <li class="main-navigation__item">
-            <a class="main-navigation__link button" href="https://htmlacademy.ru">HTML ACADEMY</a>
+            <a class="main-navigation__link" href="https://htmlacademy.ru">HTML ACADEMY</a>
           </li>
         </ul>
       </nav>
@@ -125,5 +126,11 @@
         <a class="main-footer__copyrights-link" href="https://htmlacademy.ru"></a>
       </small>
     </footer>
+    <script>
+      document.querySelector('.main-navigation__button').addEventListener('click', function() {
+          this.classList.toggle('active');
+          document.querySelector('.main-navigation__list').classList.toggle('open');
+      })
+  </script>
   </body>
 </html>
