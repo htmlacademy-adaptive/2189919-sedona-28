@@ -14,6 +14,7 @@
       <nav class="main-navigation">
         <button class="main-navigation__button" type="button">
           <span class="visually-hidden">Открыть меню.</span>
+          <span class="main-navigation__button-lines"></span>
         </button>
         <span class="main-navigation__logo">
           <span class="visually-hidden">Переход на главную страницу.</span>
@@ -39,7 +40,7 @@
       <section class="intro">
         <img class="intro__image" src="img/intro__image-feedback.svg" alt="Седона" width="229" height="39">
       </section>
-      <section class="gallery">
+      <section class="gallery container">
         <header class="gallery__header">
           <h2 class="gallery__heading heading">Фото и видео</h2>
           <p class="gallery__text text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
@@ -95,7 +96,7 @@
           </li>
         </ul>
       </section>
-      <section class="video-promotion">
+      <section class="video-promotion container">
         <header class="video-promotion__header">
           <h2 class="video-promotion__title heading">Все еще сомневаетесь?</h2>
           <p class="video-promotion__text text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
@@ -110,7 +111,7 @@
         </div>
       </section>
     </main>
-    <footer class="main-footer">
+    <footer class="main-footer container">
       <p class="main-footer__text heading heading--big">#VISITSEDONA</p>
       <ul class="main-footer__social social">
         <li class="social__item">
@@ -134,4 +135,10 @@
         <a class="main-footer__copyrights-link" href="https://htmlacademy.ru"></a>
       </small>
     </footer>
+    <script>
+      document.querySelector('.main-navigation__button').addEventListener('click', function() {
+          this.classList.toggle('active');
+          document.querySelector('.main-navigation__list').classList.toggle('open');
+      })
+  </script>
   </body>
