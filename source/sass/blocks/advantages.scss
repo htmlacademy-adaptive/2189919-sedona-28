@@ -6,7 +6,6 @@
 
 .advantages__header {
   text-align: center;
-  margin: 0 18px;
 }
 
 .advantages__item--theme--dark {
@@ -67,6 +66,10 @@
 .advantages__info {
   padding: 33px 30px;
   margin: 0 18px;
+
+  @media (min-width: $tablet-width) {
+    margin: auto;
+  }
 }
 
 .advantages__info--line:not(:last-child) {

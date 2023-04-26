@@ -1,0 +1,111 @@
+@use "../global/variables" as *;
+
+.form__header {
+  text-align: center;
+}
+
+.form__fieldset {
+  border: 0;
+  border-top: 1px solid #e5e5e5;
+  margin: 0;
+  padding: 0;
+}
+
+.form__title {
+  width: 100%;
+  float: left;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    float: none;
+  }
+}
+
+.form__fieldset--no-decoration {
+  @media (min-width: $tablet-width) {
+    border-top: 0;
+  }
+}
+
+.form__fieldset--column,
+.form__label,
+.form__fieldset--radio,
+.form__fieldset--checkbox,
+.form__label-textarea-field {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.form__fieldset--radio,
+.form__fieldset--checkbox {
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.form__label-textarea-field {
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: #f2f2f2;
+}
+
+.form__label-input {
+  border: 0;
+  background-color: #f2f2f2;
+  padding: 16px 20px 16px 16px;
+}
+
+.form__label-input::placeholder {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: $color-primary-dark;
+}
+
+
+.form__label-input--placeholder-light::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.form__label-radio-name,
+.form__label-checbox-name {
+  font: 700 18px/26px $font-primary;
+  color: $color-primary-dark;
+}
+
+.form__label-textarea-field::placeholder {
+  font: 700 18px/26px $font-primary;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.form__button-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.form__fieldset--columns {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -2%;
+      left: 50%;
+      transform: translate(-50% 0);
+      width: 1px;
+      height: 104%;
+      background-color: #dbdbdb;
+    }
+  }
+}
+

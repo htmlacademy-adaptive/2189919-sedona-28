@@ -41,51 +41,53 @@
         <h2 class="visually-hidden">Форма заполнения отзыва.</h2>
         <img class="intro__image" src="img/intro__image-feedback.svg" alt="Седона" width="229" height="39">
       </section>
-      <form class="form" action="https://echo.htmlacademy.ru/" method="post">
+      <form class="form container" action="https://echo.htmlacademy.ru/" method="post">
         <header class="form__header">
           <h2 class="form__heading heading">Оставьте свой отзыв</h2>
-          <p class="form__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+          <p class="form__text text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </header>
-        <fieldset class="form__fieldset form__fieldset--column form__fieldset--column-left">
-          <legend class="form__title subheading">Представьтесь:</legend>
-          <label class="form__label">
-            <span class="form__label-name text">Имя*:</span>
-            <input class="form__label-input"  type="text" name="name" placeholder="Имя" required>
-          </label>
-          <label class="form__label">
-            <span class="form__label-name text">Фамилия*:</span>
-            <input class="form__label-input"  type="text" name="surname" placeholder="Фамилия" required>
-          </label>
-          <label class="form__label">
-            <span class="form__label-name text">Отчество*:</span>
-            <input class="form__label-input"  type="text" name="patronymic" placeholder="Отчество" required>
-          </label>
-        </fieldset>
-        <fieldset class="form__fieldset form__fieldset--column form__fieldset--column-right">
-          <legend class="form__title subheading">Контактная информация:</legend>
-          <label class="form__label">
-            <span class="form__label-name text">Контактный телефон*:</span>
-            <input class="form__label-input form__label-input--icon form__label-input--icon-phone"  type="text" name="phone" placeholder="Введите телефон" required>
-          </label>
-          <label class="form__label">
-            <span class="form__label-name text">Электронная почта*:</span>
-            <input class="form__label-input form__label-input--icon form__label-input--icon-email"  type="tel" name="email" placeholder="Введите e-mail" required>
-          </label>
-        </fieldset>
+        <div class="form__fieldset--columns">
+          <fieldset class="form__fieldset form__fieldset--no-decoration form__fieldset--column form__fieldset--column-left">
+            <legend class="form__title subheading">Представьтесь:</legend>
+            <label class="form__label">
+              <span class="form__label-name text">Имя*:</span>
+              <input class="form__label-input" type="text" name="name" placeholder="Пётр" required>
+            </label>
+            <label class="form__label">
+              <span class="form__label-name text">Фамилия*:</span>
+              <input class="form__label-input" type="text" name="surname" placeholder="Пустота" required>
+            </label>
+            <label class="form__label">
+              <span class="form__label-name text">Отчество*:</span>
+              <input class="form__label-input" type="text" name="patronymic" placeholder="Викторович" required>
+            </label>
+          </fieldset>
+          <fieldset class="form__fieldset form__fieldset--no-decoration form__fieldset--column form__fieldset--column-right">
+            <legend class="form__title subheading">Контактная информация:</legend>
+            <label class="form__label">
+              <span class="form__label-name text">Контактный телефон*:</span>
+              <input class="form__label-input form__label-input--placeholder-light form__label-input--icon form__label-input--icon-phone"  type="text" name="phone" placeholder="Введите телефон" required>
+            </label>
+            <label class="form__label">
+              <span class="form__label-name text">Электронная почта*:</span>
+              <input class="form__label-input form__label-input--placeholder-light form__label-input--icon form__label-input--icon-email"  type="tel" name="email" placeholder="Введите e-mail" required>
+            </label>
+          </fieldset>
+        </div>
         <fieldset class="form__fieldset form__fieldset--radio">
           <legend class="form__title subheading">Ваше общее впечатление:</legend>
           <label class="form__label-radio">
-            <input class="form__label-radio-input"  type="radio" name="impression" value="positive" checked>
+            <input class="form__label-radio-input" type="radio" name="impression" value="positive" checked>
             <span class="form__label-radio-control"></span>
             <span class="form__label-radio-name">Скорее положительное</span>
           </label>
           <label class="form__label-radio">
-            <input class="form__label-radio-input"  type="radio" name="impression" value="negative">
+            <input class="form__label-radio-input" type="radio" name="impression" value="negative">
             <span class="form__label-radio-control"></span>
             <span class="form__label-radio-name">Скорее отрицательное</span>
           </label>
           <label class="form__label-radio">
-            <input class="form__label-radio-input"  type="radio" name="impression" value="negative">
+            <input class="form__label-radio-input" type="radio" name="impression" value="negative">
             <span class="form__label-radio-control"></span>
             <span class="form__label-radio-name">Затрудняюсь ответить</span>
           </label>
@@ -93,22 +95,22 @@
         <fieldset class="form__fieldset form__fieldset--checkbox">
           <legend class="form__title subheading">Посещенные достопримечательности:</legend>
           <label class="form__label-checkbox">
-            <input class="form__label-checkbox-input"  type="checkbox" name="attractions" value="devils-bridge" checked>
+            <input class="form__label-checkbox-input" type="checkbox" name="attractions" value="devils-bridge" checked>
             <span class="form__label-checbox-control"></span>
             <span class="form__label-checbox-name">Мост дьявола</span>
           </label>
           <label class="form__label-checkbox">
-            <input class="form__label-checkbox-input"  type="checkbox" name="attractions" value="bell-rock" checked>
+            <input class="form__label-checkbox-input" type="checkbox" name="attractions" value="bell-rock" checked>
             <span class="form__label-checkbox-control"></span>
             <span class="form__label-checbox-name">Гора-Колокол</span>
           </label>
           <label class="form__label-checkbox">
-            <input class="form__label-checkbox-input"  type="checkbox" name="attractions" value="slide-park" checked>
+            <input class="form__label-checkbox-input" type="checkbox" name="attractions" value="slide-park" checked>
             <span class="form__label-checkbox-control"></span>
             <span class="form__label-checbox-name">Слайд-парк</span>
           </label>
           <label class="form__label-checkbox">
-            <input class="form__label-checkbox-input"  type="checkbox" name="attractions" value="red-mountains">
+            <input class="form__label-checkbox-input" type="checkbox" name="attractions" value="red-mountains">
             <span class="form__label-checkbox-control"></span>
             <span class="form__label-checbox-name">Красные скалы</span>
           </label>
@@ -125,7 +127,7 @@
         </div>
       </form>
     </main>
-    <footer class="main-footer">
+    <footer class="main-footer container">
       <p class="main-footer__text heading heading--big">#VISITSEDONA</p>
       <ul class="main-footer__social social">
         <li class="social__item">
@@ -150,7 +152,7 @@
       </small>
     </footer>
 
-    <div class="modal-container">
+    <!-- <div class="modal-container">
       <div class="modal">
         <h2 class="modal__title heading">Ваш отзыв отправлен!</h2>
         <p class="modal__text text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
@@ -168,7 +170,7 @@
           <button class="modal__button button" type="button">ОК</button>
         </div>
       </div>
-    </div>
+    </div> -->
     <script>
       document.querySelector('.main-navigation__button').addEventListener('click', function() {
           this.classList.toggle('active');
