@@ -1,0 +1,27 @@
+@use "../global/variables" as *;
+
+.main-footer {
+  display: grid;
+  gap: 30px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.social {
+  list-style-type: none;
+}
+
+.main-footer__text {
+  font: 700 21px/26px $font-primary;
+}
+
+.main-footer__copyrights-text {
+  font: 400 14px/21px $font-primary;
+  text-transform: uppercase;
+}
+

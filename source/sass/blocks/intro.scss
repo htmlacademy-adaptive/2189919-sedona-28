@@ -4,4 +4,10 @@
   background-image: url(../img/intro.jpg);
   background-repeat: no-repeat;
   background-color: fade-out($background-secondary, 0.5);
+  padding: 90px 0 85px;
+}
+
+.intro__image {
+  display: block;
+  margin: 0 auto;
 }

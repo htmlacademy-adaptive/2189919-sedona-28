@@ -1,11 +1,95 @@
 @use "../global/variables" as *;
 
+.gallery {
+  text-align: center;
+}
+
 .gallery__title {
   font: 700 14px/21px $font-primary;
   color: $color-primary-dark;
+
+  @media (min-width: $desktop-width) {
+    color: $color-secondary;
+  }
 }
 
 .gallery__text {
   font: 400 14px/21px $font-primary;
   color: $color-primary;
+}
+
+.gallery__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.gallery__item--wide {
+  grid-column: 1/-1;
+}
+
+.gallery__item {
+  border-bottom: 1px solid #e5e5e5;
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
+}
+
+.gallery__item:first-child {
+  border-top: 1px solid #e5e5e5;
+}
+
+.gallery__info {
+  text-align: left;
+
+  @media (min-width: $tablet-width) {
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: $color-secondary;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+}
+
+.gallery__link {
+  margin: 0;
+  padding: 0;
+}
+
+.gallery__description {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    color: $color-secondary;
+  }
+}
+
+.gallery__likes-count {
+  font: 700 14px/21px $font-primary;
+  border: 0;
+  background: 0;
+
+  @media (min-width: $desktop-width) {
+    color: $color-secondary;
+  }
+}
+
+.video-promotion {
+  text-align: center;
+}
+
+.gallery__image {
+  width: 100%;
+  object-fit: cover;
 }

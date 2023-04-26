@@ -1,18 +1,95 @@
 @use "../global/variables" as *;
 
-.advantages__info--theme--dark {
+.advantages {
+  text-align: center;
+}
+
+.advantages__header {
+  text-align: center;
+}
+
+.advantages__item--theme--dark {
   background-color: $background-secondary;
   color: $color-secondary;
 }
 
+
 .advantages__item-title {
   color: inherit;
+  order: -1;
 }
 
 .advantages__item-text {
   color: inherit;
 }
 
-.advantages__info--theme--light {
+.advantages__item--theme--light {
   background-color: #eeeeee;
+}
+
+.advantages__list,
+.advantages__item--wide,
+.advantages__item--theme--light,
+.advantages__sublist {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column: span 3;
+  }
+}
+
+.advantages__list {
+  counter-reset: order;
+}
+
+
+.advantages__item--order {
+  display: flex;
+  flex-direction: column;
+  counter-increment: order;
+}
+
+.advantages__item--order .advantages__item-title::after {
+  display: block;
+  content: "— №" counter(order) " —";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  margin-top: 11px;
+}
+
+.advantages__info {
+  padding: 33px 30px;
+  margin: 0 18px;
+
+  @media (min-width: $tablet-width) {
+    margin: auto;
+  }
+}
+
+.advantages__info--line:not(:last-child) {
+  border-bottom: 1px solid #d6d6d6;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+  }
+}
+
+.advantages__item--wide:nth-child(2n) .advantages__item--image {
+  order: -1;
+}
+
+.advantages__item--image {
+  grid-column: span 2;
+}
+
+.advantages__image {
+  display: block;
+  object-fit: cover;
+  background-color: #d6d6d6;
 }
