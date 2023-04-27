@@ -1,0 +1,38 @@
+@use "../global/variables" as *;
+
+.social {
+  display: grid;
+  grid-template-columns: repeat(3, 48px);
+  gap: 6px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.social__link {
+  display: block;
+  width: 48px;
+  height: 48px;
+  background-color: $background-secondary;
+
+  &::before {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 24px 24px;
+  }
+
+  &--vk::before {
+    background-image: url("../../img/vk.svg");
+  }
+
+  &--telegram::before {
+    background-image: url("../../img/telegram.svg");
+  }
+
+  &--youtube::before {
+    background-image: url("../../img/youtube.svg");
+  }
+}

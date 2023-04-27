@@ -4,24 +4,41 @@
   display: grid;
   gap: 30px;
   text-align: center;
+  padding-top: 33px;
+  padding-bottom: 33px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 36px;
+    padding-bottom: 36px;
   }
-}
-
-.social {
-  list-style-type: none;
 }
 
 .main-footer__text {
   font: 700 21px/26px $font-primary;
+  margin: 0;
 }
 
-.main-footer__copyrights-text {
+.main-footer__copyrights-link {
+  position: relative;
   font: 400 14px/21px $font-primary;
   text-transform: uppercase;
+  text-decoration: none;
+  color: $color-primary-dark;
+  padding-right: 40px;
+}
+
+.main-footer__social {
+  margin: 0 auto;
+}
+
+.main-footer__copyrights-svg {
+  position: absolute;
+  width: 28px;
+  height: 35px;
+  top: -7px;
+  right: 0;
 }
 
