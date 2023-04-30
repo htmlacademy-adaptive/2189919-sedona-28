@@ -15,6 +15,7 @@
   font-family: $font-primary;
   color: $color-primary;
   background-color: $background-primary;
+  overflow-x: hidden;
 
   @media (min-width: $desktop-width) {
     max-width: $desktop-width;

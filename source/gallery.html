@@ -41,7 +41,7 @@
       <section class="intro intro-alternative">
         <img class="intro__image" src="img/intro__image-feedback.svg" alt="Седона" width="229" height="39">
       </section>
-      <section class="gallery container">
+      <section class="gallery gallery-container">
         <header class="gallery__header">
           <h2 class="gallery__heading heading">Фото и видео</h2>
           <p class="gallery__text text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
@@ -49,65 +49,77 @@
         <ul class="gallery__list">
           <li class="gallery__item gallery__item--wide">
             <a class="gallery__link"  href="#">
-              <img class="gallery__image" src="img/gallery__image-1.jpg" alt="Фотография Седоны 'Неродные просторы'.">
+              <img class="gallery__image" src="img/gallery__image-1.jpg" alt="Фотография Седоны 'Неродные просторы'." width="280" height="280">
             </a>
-            <div class="gallery__info">
+            <div class="gallery__info gallery__info--wide">
               <div class="gallery__description">
                 <span class="gallery__title">Неродные просторы</span>
                 <span class="gallery__author">Автор фото: Борис</span>
               </div>
-              <button class="gallery__likes-count" type="button" aria-label="Поставить лайк" aria-description="Всего 1350">1350</button>
+              <button class="gallery__likes-count" type="button" aria-label="Поставить лайк" aria-description="Всего 1350">
+                <svg class="gallery__likes-count-icon" width="23" height="21" viewBox="0 0 23 21" fill="CurrentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"/></svg>
+                <span class="gallery__likes-count-text">1350</span>
+              </button>
             </div>
           </li>
           <li class="gallery__item">
             <a class="gallery__link"  href="#">
-              <img class="gallery__image" src="img/gallery__image-2.jpg" alt="Фотография Седоны 'Местная растительность'.">
+              <img class="gallery__image" src="img/gallery__image-2.jpg" alt="Фотография Седоны 'Местная растительность'." width="280" height="280">
             </a>
             <div class="gallery__info">
               <div class="gallery__description">
                 <span class="gallery__title">Местная растительность</span>
                 <span class="gallery__author">Автор фото: Сергей</span>
               </div>
-              <button class="gallery__likes-count" type="button" aria-label="Поставить лайк" aria-description="Всего 143">143</button>
+              <button class="gallery__likes-count" type="button" aria-label="Поставить лайк" aria-description="Всего 143">
+                <svg class="gallery__likes-count-icon" width="23" height="21" viewBox="0 0 23 21" fill="CurrentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"/></svg>
+                <span class="gallery__likes-count-text">143</span>
+              </button>
             </div>
           </li>
           <li class="gallery__item">
             <a class="gallery__link"  href="#">
-              <img class="gallery__image" src="img/gallery__image-3.jpg" alt="Фотография Седоны 'Дорога на север'.">
+              <img class="gallery__image" src="img/gallery__image-3.jpg" alt="Фотография Седоны 'Дорога на север'." width="280" height="280">
             </a>
-            <div class="gallery__info">
+            <div class="gallery__info gallery__info--tablet-dark">
               <div class="gallery__description">
                 <span class="gallery__title">Дорога на север</span>
                 <span class="gallery__author">Автор фото: Петр</span>
               </div>
-              <button class="gallery__likes-count" type="button" aria-label="Поставить лайк" aria-description="Всего 96">96</button>
+              <button class="gallery__likes-count" type="button" aria-label="Поставить лайк" aria-description="Всего 96">
+                <svg class="gallery__likes-count-icon" width="23" height="21" viewBox="0 0 23 21" fill="CurrentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"/></svg>
+                <span class="gallery__likes-count-text">96</span>
+              </button>
             </div>
           </li>
           <li class="gallery__item">
             <a class="gallery__link"  href="#">
-              <img class="gallery__image" src="img/gallery__image-4.jpg" alt="Фотография Седоны 'Мост дьявола'.">
+              <img class="gallery__image" src="img/gallery__image-4.jpg" alt="Фотография Седоны 'Мост дьявола'." width="280" height="280">
             </a>
             <div class="gallery__info">
               <div class="gallery__description">
                 <span class="gallery__title">Мост дьявола</span>
                 <span class="gallery__author">Автор фото: Антон</span>
               </div>
-              <button class="gallery__likes-count" type="button" aria-label="Поставить лайк" aria-description="Всего 254">254</button>
+              <button class="gallery__likes-count" type="button" aria-label="Поставить лайк" aria-description="Всего 254">
+                <svg class="gallery__likes-count-icon" width="23" height="21" viewBox="0 0 23 21" fill="CurrentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"/></svg>
+                <span class="gallery__likes-count-text">254</span>
+              </button>
             </div>
           </li>
         </ul>
       </section>
-      <section class="video-promotion container">
+      <section class="video-promotion gallery-container">
         <header class="video-promotion__header">
           <h2 class="video-promotion__title heading">Все еще сомневаетесь?</h2>
           <p class="video-promotion__text text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
         </header>
-        <div class="video-promotion__video video">
-          <a class="video-link" href="https://www.youtube.com/watch?v=4fCJTUchxqw&ab_channel=LivinginArizonaNow" target="_blank" rel="noopener noreferrer">
-            <img src="img/video-poster.jpg" alt="Смотреть видео про Седону." width="280" height="177">
+        <div class="video-promotion__video">
+          <a class="video-promotion__link" href="https://www.youtube.com/watch?v=4fCJTUchxqw&ab_channel=LivinginArizonaNow" target="_blank" rel="noopener noreferrer">
+            <img class="video-promotion__image" src="img/video-poster.jpg" alt="Смотреть видео про Седону." width="280" height="177">
           </a>
-          <button class="video-button" type="button" aria-label="Воспроизвести видео" hidden>
-            <svg width="48" height="54" viewBox="0 0 48 54" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M48 27L0 54L2.42273e-06 0L48 27Z"/></svg>
+          <button class="video-promotion__button" type="button" aria-label="Воспроизвести видео" hidden>
+            <svg class="video-promotion__button-icon" width="48" height="54" viewBox="0 0 48 54" fill="CurrentColor" xmlns="http://www.w3.org/2000/svg"><path d="M48 27L0 54L2.42273e-06 0L48 27Z"/></svg>
           </button>
         </div>
       </section>
