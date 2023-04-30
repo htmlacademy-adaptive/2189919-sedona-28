@@ -20,14 +20,3 @@
   margin: 0 auto;
 }
 
-.intro-feedback {
-  padding: 52px 0 67px;
-
-  @media (min-width: $tablet-width) {
-    padding: 95px 0 117px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 101px 0 120px;
-  }
-}
