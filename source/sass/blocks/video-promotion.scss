@@ -1,0 +1,60 @@
+@use "../global/variables" as *;
+
+.video-promotion__header {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 270px;
+  margin-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    max-width: 450px;
+    margin-bottom: 71px;
+  }
+}
+
+.video-promotion__title {
+  margin-bottom: 37px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 35px;
+  }
+}
+
+.video-promotion {
+  text-align: center;
+  padding-top: 17px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 40px;
+    padding-top: 63px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 84px;
+  }
+}
+
+.video-promotion__image {
+  display: block;
+  border: none;
+  background-color: $color-primary;
+  width: 100%;
+}
+
+.video-promotion__video {
+  position: relative;
+}
+
+.video-promotion__button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 48px;
+  height: 54px;
+  border: none;
+  background: $background-primary;
+  transform: translate(-50%, -50%);
+  opacity: 0.7;
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
+}
