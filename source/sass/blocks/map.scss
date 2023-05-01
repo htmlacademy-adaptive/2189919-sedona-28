@@ -1,1 +1,7 @@
 @use "../global/variables" as *;
+
+.map__iframe {
+  display: block;
+  border: 0;
+  width: 100%;
+}

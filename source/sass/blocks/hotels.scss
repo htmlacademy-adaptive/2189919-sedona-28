@@ -2,5 +2,38 @@
 
 .hotels {
   text-align: center;
-  margin: 0 18px;
+  padding: 39px 18px 49px 18px;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 155px 55px 155px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 60px 371px 66px 371px;
+  }
+}
+
+.hotels__title {
+  margin-bottom: 28px;
+}
+
+.hotels__text {
+  margin: 0 auto;
+  margin-bottom: 32px;
+  max-width: 265px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 440px;
+  }
+
+  br {
+    @media (max-width: $mobile-width-only) {
+      display: none;
+    }
+  }
+}
+
+.hotels__button {
+  max-width: max-content;
+  margin: 0 auto;
 }
