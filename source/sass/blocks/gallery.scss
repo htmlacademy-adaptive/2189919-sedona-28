@@ -178,7 +178,13 @@
 
 .gallery__image {
   display: block;
+  width: 100%;
+  object-fit: cover;
   border: none;
   background-color: $color-primary;
+
+  @media (max-width: 321px) {
+    max-width: 280px;
+  }
 }
 

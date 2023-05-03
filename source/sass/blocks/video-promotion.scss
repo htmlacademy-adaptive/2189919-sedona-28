@@ -37,9 +37,14 @@
 
 .video-promotion__image {
   display: block;
+  width: 100%;
+  object-fit: cover;
   border: none;
   background-color: $color-primary;
-  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    max-height: 500px;
+  }
 }
 
 .video-promotion__video {

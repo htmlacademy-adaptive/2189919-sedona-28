@@ -23,16 +23,16 @@
         </span>
         <ul class="main-navigation__list">
           <li class="main-navigation__item">
-            <a class="main-navigation__link button" href="index.html">Главная</a>
+            <a class="main-navigation__link" href="index.html">Главная</a>
           </li>
           <li class="main-navigation__item">
-            <a class="main-navigation__link button" href="#" aria-current="page">Фото и видео</a>
+            <a class="main-navigation__link" href="#" aria-current="page">Фото и видео</a>
           </li>
           <li class="main-navigation__item">
-            <a class="main-navigation__link button" href="feedback.html">Форма отзыва</a>
+            <a class="main-navigation__link" href="feedback.html">Форма отзыва</a>
           </li>
           <li class="main-navigation__item">
-            <a class="main-navigation__link button" href="https://htmlacademy.ru">HTML ACADEMY</a>
+            <a class="main-navigation__link" href="https://htmlacademy.ru">HTML ACADEMY</a>
           </li>
         </ul>
       </nav>
@@ -49,7 +49,11 @@
         <ul class="gallery__list">
           <li class="gallery__item gallery__item--wide">
             <a class="gallery__link"  href="#">
-              <img class="gallery__image" src="img/gallery__image-1.jpg" alt="Фотография Седоны 'Неродные просторы'." width="280" height="280">
+              <picture>
+                <source media="(min-width: 769px)" srcset="img/gallery__image-1--desktop.jpg 1x, img/gallery__image-1--desktop@2x.jpg 2x" width="1200" height="400">
+                <source media="(min-width: 321px)" srcset="img/gallery__image-1--tablet.jpg 1x, img/gallery__image-1--tablet@2x.jpg 2x" width="648" height="400">
+                <img class="gallery__image" src="img/gallery__image-1--mobile.jpg" srcset="img/gallery__image-1--mobile@2x.jpg 2x" alt="Фотография Седоны 'Неродные просторы'." width="280" height="280">
+              </picture>
             </a>
             <div class="gallery__info gallery__info--wide">
               <div class="gallery__description">
@@ -64,7 +68,11 @@
           </li>
           <li class="gallery__item">
             <a class="gallery__link"  href="#">
-              <img class="gallery__image" src="img/gallery__image-2.jpg" alt="Фотография Седоны 'Местная растительность'." width="280" height="280">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/gallery__image-2--desktop.jpg 1x, img/gallery__image-2--desktop@2x.jpg 2x" width="400" height="267">
+                <source media="(min-width: 768px)" srcset="img/gallery__image-2--tablet.jpg 1x, img/gallery__image-2--tablet@2x.jpg 2x" width="324" height="347">
+                <img class="gallery__image" src="img/gallery__image-2--mobile.jpg" srcset="img/gallery__image-2--mobile@2x.jpg 2x" alt="Фотография Седоны 'Местная растительность'." width="280" height="280">
+              </picture>
             </a>
             <div class="gallery__info">
               <div class="gallery__description">
@@ -79,7 +87,11 @@
           </li>
           <li class="gallery__item">
             <a class="gallery__link"  href="#">
-              <img class="gallery__image" src="img/gallery__image-3.jpg" alt="Фотография Седоны 'Дорога на север'." width="280" height="280">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/gallery__image-3--desktop.jpg 1x, img/gallery__image-3--desktop@2x.jpg 2x" width="400" height="267">
+                <source media="(min-width: 768px)" srcset="img/gallery__image-3--tablet.jpg 1x, img/gallery__image-3--tablet@2x.jpg 2x" width="324" height="347">
+                <img class="gallery__image" src="img/gallery__image-3--mobile.jpg" srcset="img/gallery__image-3--mobile@2x.jpg 2x" alt="Фотография Седоны 'Дорога на север'." width="280" height="280">
+              </picture>
             </a>
             <div class="gallery__info gallery__info--tablet-dark">
               <div class="gallery__description">
@@ -94,7 +106,11 @@
           </li>
           <li class="gallery__item">
             <a class="gallery__link"  href="#">
-              <img class="gallery__image" src="img/gallery__image-4.jpg" alt="Фотография Седоны 'Мост дьявола'." width="280" height="280">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/gallery__image-4--desktop.jpg 1x, img/gallery__image-4--desktop@2x.jpg 2x" width="400" height="267">
+                <source media="(min-width: 768px)" srcset="img/gallery__image-4--tablet.jpg 1x, img/gallery__image-4--tablet@2x.jpg 2x" width="324" height="347">
+                <img class="gallery__image" src="img/gallery__image-4--mobile.jpg" srcset="img/gallery__image-4--mobile@2x.jpg 2x" alt="Фотография Седоны 'Мост дьявола'." width="280" height="280">
+              </picture>
             </a>
             <div class="gallery__info">
               <div class="gallery__description">
@@ -117,7 +133,11 @@
         <div class="video-promotion__video">
           <button class="video-promotion__button" type="button" aria-label="Воспроизвести видео" hidden></button>
           <a class="video-promotion__link" href="https://www.youtube.com/watch?v=4fCJTUchxqw&ab_channel=LivinginArizonaNow" target="_blank" rel="noopener noreferrer">
-            <img class="video-promotion__image" src="img/video-poster.jpg" alt="Смотреть видео про Седону." width="280" height="177">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/video-promotion__image--desktop.jpg 1x, img/video-promotion__image--desktop@2x.jpg 2x" width="800" height="500">
+              <source media="(min-width: 768px)" srcset="img/video-promotion__image--tablet.jpg 1x, img/video-promotion__image--tablet@2x.jpg 2x" width="648" height="500">
+              <img class="video-promotion__image" src="img/video-promotion__image--mobile.jpg" srcset="img/video-promotion__image--mobile@2x.jpg 2x" alt="Видео про Седону." width="280" height="177">
+            </picture>
           </a>
         </div>
       </section>
@@ -126,17 +146,17 @@
       <p class="main-footer__text heading heading--big">#VISITSEDONA</p>
       <ul class="main-footer__social social">
         <li class="social__item">
-          <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">
+          <a class="social__link social__link--vk button" href="https://vk.com/htmlacademy">
             <span class="visually-hidden">Перейти во вконтакте.</span>
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+          <a class="social__link social__link--telegram button" href="https://t.me/htmlacademy">
             <span class="visually-hidden">Перейти в телеграм.</span>
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+          <a class="social__link social__link--youtube button" href="https://www.youtube.com/user/htmlacademyru">
             <span class="visually-hidden">Перейти в ютуб.</span>
           </a>
         </li>
