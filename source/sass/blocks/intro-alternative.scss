@@ -2,12 +2,30 @@
 
 .intro-alternative {
   padding: 52px 0 67px;
+  background-image: url("../../img/intro-alternative--mobile.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/intro-alternative--mobile@2x.jpg");
+  }
 
   @media (min-width: $tablet-width) {
     padding: 95px 0 117px;
+    background-image: url("../../img/intro-alternative--tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/intro-alternative--tablet@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop-width) {
     padding: 101px 0 120px;
+    background-image: url("../../img/intro-alternative--desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/intro-alternative--desktop@2x.jpg");
+    }
   }
 }
