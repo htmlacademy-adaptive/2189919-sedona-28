@@ -36,4 +36,9 @@
 .hotels__button {
   max-width: max-content;
   margin: 0 auto;
+  padding: 16px 50px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 458px;
+  }
 }
