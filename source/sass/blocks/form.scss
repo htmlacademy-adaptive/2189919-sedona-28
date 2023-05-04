@@ -139,15 +139,6 @@
 }
 
 
-// .form__label-input::placeholder {
-
-// }
-
-
-// .form__label-input--placeholder-light::placeholder {
-//   color: rgba(0, 0, 0, 0.3);
-// }
-
 .form__label-radio-name,
 .form__label-checbox-name {
   font: 700 18px/26px $font-primary;
@@ -369,13 +360,15 @@
   flex-direction: column;
   width: 100%;
   margin: 0 auto;
-  text-align: center;
   margin-bottom: 22px;
+  padding: 0;
+
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 64px;
+    align-items: center;
   }
 
   @media (min-width: $desktop-width) {
@@ -386,7 +379,8 @@
 }
 
 .form__button {
-  padding: 16px 49px;
+  padding: 16px 0;
+  min-width: 280px;
 
   @media (min-width: $tablet-width) {
     min-width: 324px;
