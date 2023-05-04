@@ -108,6 +108,19 @@
   }
 }
 
+.main-navigation__item:last-child .main-navigation__link {
+  @media (max-width: $mobile-width-only) {
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 100% 7px;
+    background-image: linear-gradient(
+                        180deg,
+                        fade-out($color-primary-dark, 1) 0%,
+                        fade-out($color-primary-dark, 0.8) 100%);
+  }
+}
+
+
 .main-navigation__button {
   position: absolute;
   display: block;
