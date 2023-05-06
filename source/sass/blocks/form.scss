@@ -130,13 +130,15 @@
   }
 
   &--icon-phone {
-    background-image: url("../../img/icon-phone.svg"), $icon-background;
+    background-image: url("../img/stack.svg#icon-phone"), $icon-background;
     background-position: right 19px center, right;
+    background-size: 18px 18px, auto;
   }
 
   &--icon-email {
-    background-image: url("../../img/icon-email.svg"), $icon-background;
+    background-image: url("../img/stack.svg#icon-email"), $icon-background;
     background-position: right 19px center, right center;
+    background-size: 18px 18px, auto;
   }
 }
 
@@ -347,7 +349,7 @@
   left: 12px;
   width: 22px;
   height: 16px;
-  background-image: url("img/stac.svgk#checbox-control");
+  background-image: url("../img/stack.svg#checbox-control");
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }

@@ -14,19 +14,19 @@ navToggle.addEventListener('click', function () {
   }
 });
 
-let form = document.querySelector('form');
-let formModal = form.querySelector('.form__modal');
-let formSubmitButton = form.querySelector('.form__button');
-let buttonClose = form.querySelector('.form__modal-button');
-let formOverlay = form.querySelector('.form__modal-overlay');
+const form = document.querySelector('form');
+const formModal = form.querySelector('.form__modal');
+const formSubmitButton = form.querySelector('.form__button');
+const buttonClose = form.querySelector('.form__modal-button');
+const formOverlay = form.querySelector('.form__modal-overlay');
 
 formSubmitButton.addEventListener('click', (e) => {
   e.preventDefault();
 
-  let title = formModal.querySelector('.form__modal-title');
-  let message = formModal.querySelector('.form__modal-message');
-  let inputs = document.querySelectorAll('input');
-  let info = {
+  const title = formModal.querySelector('.form__modal-title');
+  const message = formModal.querySelector('.form__modal-message');
+  const inputs = document.querySelectorAll('input');
+  const info = {
     'error' : {
       'title' : 'Что-то пошло не так!',
       'message' : 'Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить',
@@ -38,22 +38,13 @@ formSubmitButton.addEventListener('click', (e) => {
       'buttonText' : 'Закрыть окно'
     }
   }
-  let text = info.success;
-
-  for (field of inputs) {
-    if (!field.validity.valid) {
-      text = info.error;
-      break;
-    }
-  };
+  const isValid = form. checkValidity ();
+  const text = isValid? info.success : info.error;
 
   title.innerHTML = text.title;
   message.innerHTML = text.message;
   buttonClose.innerHTML = text.buttonText;
-
-  if (text == info.success) {
-    formModal.classList.add('form__modal--success');
-  }
+  formModal.classList.toggle('form__modal--success', isValid);
 
   formOverlay.classList.add('form__modal-overlay--opened');
   formModal.classList.add('form__modal--opened');
@@ -66,18 +57,13 @@ const modalClose = () => {
 }
 
 /* закрытие окон */
-buttonClose.addEventListener('click', (e) => {
-  modalClose();
-});
+formOverlay.addEventListener('click', modalClose);
+buttonClose.addEventListener('click', modalClose);
 
 /* закрытие по ESC */
 document.body.addEventListener('keydown', (e) => {
-  if (e.keyCode == 27) {
+  if (e.key === 'Escape' || e.key === 'Esc') {
     modalClose();
   };
 }, false);
 
-/* скрытие окна при клике на подложку */
-formOverlay.addEventListener('click', (e) => {
-  modalClose();
-});
