@@ -35,7 +35,7 @@
     br {
       display: none;
     }
-    padding: 49px 358px 45px;
+    padding: 60px 357px 45px 353px;
   }
 }
 
@@ -77,6 +77,10 @@
   @media (min-width: $tablet-width) {
     max-width: 150px;
     margin-bottom: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 23px;
   }
 }
 
@@ -225,13 +229,13 @@
 
     &--space-city,
     &--space-devil {
-      padding: 53px 18px 31px 18px;
+      padding: 53px 23px 52px 21px;
     }
 
     &--space-places,
     &--space-road,
     &--space-tourists {
-      padding: 24px 18px 24px 18px;
+      padding: 53px 18px 53px 18px;
     }
   }
 }
@@ -307,7 +311,7 @@
 
   @media (min-width: $desktop-width) {
     text-align: center;
-    padding: 69px 50px;
+    padding: 66px 53px 64px 51px;
   }
 
   &::before {
@@ -347,12 +351,17 @@
 }
 
 .advantages__subitem--icon-souvenirs::before {
-  background-image: url("../img/advantages.svg#souvenirs");
+  background-image: url("../img/advantages.svg#souvenirs--big");
   margin: 0 auto 24px;
 
   @media (min-width: $tablet-width) {
     margin: 0 auto 14px;
     margin-top: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto 24px;
+    margin-top: 2px;
   }
 }
 
