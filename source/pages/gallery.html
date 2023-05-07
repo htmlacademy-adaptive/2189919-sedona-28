@@ -19,7 +19,7 @@
         </button>
         <span class="main-navigation__logo">
           <span class="visually-hidden">Переход на главную страницу.</span>
-          <img src="img/logo.svg" alt="Логотип сайта.">
+          <img class="main-navigation__logo-image" src="img/logo.svg" alt="Логотип сайта." width="185" height="96">
         </span>
         <ul class="main-navigation__list">
           <li class="main-navigation__item">
@@ -39,7 +39,7 @@
     </header>
     <main class="page__main">
       <section class="intro intro-alternative">
-        <img class="intro__image" src="img/intro__image-feedback.svg" alt="Седона" width="229" height="39">
+        <img class="intro__image" src="img/intro-svg-alternative.svg" alt="Седона" width="229" height="39">
       </section>
       <section class="gallery gallery-container">
         <header class="gallery__header">
@@ -50,15 +50,15 @@
           <li class="gallery__item gallery__item--wide">
             <a class="gallery__link"  href="#">
               <picture>
-                <source type="image/avif" media="(min-width: 769px)" srcset="img/gallery__image-1--desktop.avif 1x, img/gallery__image-1--desktop@2x.avif 2x">
-                <source type="image/avif" media="(min-width: 321px)" srcset="img/gallery__image-1--tablet.avif 1x, img/gallery__image-1--tablet@2x.avif 2x">
-                <source type="image/avif" srcset="img/gallery__image-1--mobile.avif 1x, img/gallery__image-1--mobile@2x.avif 2x">
-                <source type="image/webp" media="(min-width: 769px)" srcset="img/gallery__image-1--desktop.webp 1x, img/gallery__image-1--desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 321px)" srcset="img/gallery__image-1--tablet.webp 1x, img/gallery__image-1--tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/gallery__image-1--mobile.webp 1x, img/gallery__image-1--mobile@2x.webp 2x">
+                <source type="image/avif" media="(min-width: 769px)" srcset="img/gallery__image-1--desktop.avif 1x, img/gallery__image-1--desktop@2x.avif 2x" width="1200" height="400">
+                <source type="image/avif" media="(min-width: 321px)" srcset="img/gallery__image-1--tablet.avif 1x, img/gallery__image-1--tablet@2x.avif 2x" width="648" height="400">
+                <source type="image/avif" srcset="img/gallery__image-1--mobile.avif 1x, img/gallery__image-1--mobile@2x.avif 2x" width="280" height="280">
+                <source type="image/webp" media="(min-width: 769px)" srcset="img/gallery__image-1--desktop.webp 1x, img/gallery__image-1--desktop@2x.webp 2x" width="1200" height="400">
+                <source type="image/webp" media="(min-width: 321px)" srcset="img/gallery__image-1--tablet.webp 1x, img/gallery__image-1--tablet@2x.webp 2x" width="648" height="400">
+                <source type="image/webp" srcset="img/gallery__image-1--mobile.webp 1x, img/gallery__image-1--mobile@2x.webp 2x" width="280" height="280">
                 <source media="(min-width: 769px)" srcset="img/gallery__image-1--desktop.jpg 1x, img/gallery__image-1--desktop@2x.jpg 2x" width="1200" height="400">
                 <source media="(min-width: 321px)" srcset="img/gallery__image-1--tablet.jpg 1x, img/gallery__image-1--tablet@2x.jpg 2x" width="648" height="400">
-                <img class="gallery__image" src="img/gallery__image-1--mobile.jpg" srcset="img/gallery__image-1--mobile@2x.jpg 2x" alt="Фотография Седоны 'Неродные просторы'." width="280" height="280">
+                <img class="gallery__image" src="img/gallery__image-1--mobile.jpg" srcset="img/gallery__image-1--mobile.jpg 1x, img/gallery__image-1--mobile@2x.jpg 2x" alt="Фотография Седоны 'Неродные просторы'." width="280" height="280">
               </picture>
             </a>
             <div class="gallery__info gallery__info--wide">
@@ -67,7 +67,9 @@
                 <span class="gallery__author">Автор фото: Борис</span>
               </div>
               <button class="gallery__likes-count" type="button" aria-label="Поставить лайк" aria-description="Всего 1350">
-                <svg class="gallery__likes-count-icon" width="23" height="21" viewBox="0 0 23 21" fill="CurrentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"/></svg>
+                <svg class="gallery__likes-count-icon" width="23" height="21" fill="CurrentColor">
+                  <use href="img/stack.svg#like-icon"/>
+                </svg>
                 <span class="gallery__likes-count-text">1350</span>
               </button>
             </div>
@@ -75,15 +77,15 @@
           <li class="gallery__item">
             <a class="gallery__link"  href="#">
               <picture>
-                <source type="image/avif" media="(min-width: 769px)" srcset="img/gallery__image-2--desktop.avif 1x, img/gallery__image-2--desktop@2x.avif 2x">
-                <source type="image/avif" media="(min-width: 321px)" srcset="img/gallery__image-2--tablet.avif 1x, img/gallery__image-2--tablet@2x.avif 2x">
-                <source type="image/avif" srcset="img/gallery__image-2--mobile.avif 1x, img/gallery__image-2--mobile@2x.avif 2x">
-                <source type="image/webp" media="(min-width: 769px)" srcset="img/gallery__image-2--desktop.webp 1x, img/gallery__image-2--desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 321px)" srcset="img/gallery__image-2--tablet.webp 1x, img/gallery__image-2--tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/gallery__image-2--mobile.webp 1x, img/gallery__image-2--mobile@2x.webp 2x">
+                <source type="image/avif" media="(min-width: 769px)" srcset="img/gallery__image-2--desktop.avif 1x, img/gallery__image-2--desktop@2x.avif 2x" width="400" height="267">
+                <source type="image/avif" media="(min-width: 321px)" srcset="img/gallery__image-2--tablet.avif 1x, img/gallery__image-2--tablet@2x.avif 2x" width="324" height="347">
+                <source type="image/avif" srcset="img/gallery__image-2--mobile.avif 1x, img/gallery__image-2--mobile@2x.avif 2x" width="280" height="280">
+                <source type="image/webp" media="(min-width: 769px)" srcset="img/gallery__image-2--desktop.webp 1x, img/gallery__image-2--desktop@2x.webp 2x" width="400" height="267">
+                <source type="image/webp" media="(min-width: 321px)" srcset="img/gallery__image-2--tablet.webp 1x, img/gallery__image-2--tablet@2x.webp 2x" width="324" height="347">
+                <source type="image/webp" srcset="img/gallery__image-2--mobile.webp 1x, img/gallery__image-2--mobile@2x.webp 2x" width="280" height="280">
                 <source media="(min-width: 769px)" srcset="img/gallery__image-2--desktop.jpg 1x, img/gallery__image-2--desktop@2x.jpg 2x" width="400" height="267">
                 <source media="(min-width: 321px)" srcset="img/gallery__image-2--tablet.jpg 1x, img/gallery__image-2--tablet@2x.jpg 2x" width="324" height="347">
-                <img class="gallery__image" src="img/gallery__image-2--mobile.jpg" srcset="img/gallery__image-2--mobile@2x.jpg 2x" alt="Фотография Седоны 'Местная растительность'." width="280" height="280">
+                <img class="gallery__image" src="img/gallery__image-2--mobile.jpg" srcset="img/gallery__image-2--mobile.jpg 1x, img/gallery__image-2--mobile@2x.jpg 2x" alt="Фотография Седоны 'Местная растительность'." width="280" height="280">
               </picture>
             </a>
             <div class="gallery__info">
@@ -92,7 +94,9 @@
                 <span class="gallery__author">Автор фото: Сергей</span>
               </div>
               <button class="gallery__likes-count" type="button" aria-label="Поставить лайк" aria-description="Всего 143">
-                <svg class="gallery__likes-count-icon" width="23" height="21" viewBox="0 0 23 21" fill="CurrentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"/></svg>
+                <svg class="gallery__likes-count-icon" width="23" height="21" fill="CurrentColor">
+                  <use href="img/stack.svg#like-icon"/>
+                </svg>
                 <span class="gallery__likes-count-text">143</span>
               </button>
             </div>
@@ -100,15 +104,15 @@
           <li class="gallery__item">
             <a class="gallery__link"  href="#">
               <picture>
-                <source type="image/avif" media="(min-width: 769px)" srcset="img/gallery__image-3--desktop.avif 1x, img/gallery__image-3--desktop@2x.avif 2x">
-                <source type="image/avif" media="(min-width: 321px)" srcset="img/gallery__image-3--tablet.avif 1x, img/gallery__image-3--tablet@2x.avif 2x">
-                <source type="image/avif" srcset="img/gallery__image-3--mobile.avif 1x, img/gallery__image-3--mobile@2x.avif 2x">
-                <source type="image/webp" media="(min-width: 769px)" srcset="img/gallery__image-3--desktop.webp 1x, img/gallery__image-3--desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 321px)" srcset="img/gallery__image-3--tablet.webp 1x, img/gallery__image-3--tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/gallery__image-3--mobile.webp 1x, img/gallery__image-3--mobile@2x.webp 2x">
+                <source type="image/avif" media="(min-width: 769px)" srcset="img/gallery__image-3--desktop.avif 1x, img/gallery__image-3--desktop@2x.avif 2x" width="400" height="267">
+                <source type="image/avif" media="(min-width: 321px)" srcset="img/gallery__image-3--tablet.avif 1x, img/gallery__image-3--tablet@2x.avif 2x" width="324" height="347">
+                <source type="image/avif" srcset="img/gallery__image-3--mobile.avif 1x, img/gallery__image-3--mobile@2x.avif 2x" width="280" height="280">
+                <source type="image/webp" media="(min-width: 769px)" srcset="img/gallery__image-3--desktop.webp 1x, img/gallery__image-3--desktop@2x.webp 2x" width="400" height="267">
+                <source type="image/webp" media="(min-width: 321px)" srcset="img/gallery__image-3--tablet.webp 1x, img/gallery__image-3--tablet@2x.webp 2x" width="324" height="347">
+                <source type="image/webp" srcset="img/gallery__image-3--mobile.webp 1x, img/gallery__image-3--mobile@2x.webp 2x" width="280" height="280">
                 <source media="(min-width: 769px)" srcset="img/gallery__image-3--desktop.jpg 1x, img/gallery__image-3--desktop@2x.jpg 2x" width="400" height="267">
                 <source media="(min-width: 321px)" srcset="img/gallery__image-3--tablet.jpg 1x, img/gallery__image-3--tablet@2x.jpg 2x" width="324" height="347">
-                <img class="gallery__image" src="img/gallery__image-3--mobile.jpg" srcset="img/gallery__image-3--mobile@2x.jpg 2x" alt="Фотография Седоны 'Дорога на север'." width="280" height="280">
+                <img class="gallery__image" src="img/gallery__image-3--mobile.jpg" srcset="img/gallery__image-3--mobile.jpg 1x, img/gallery__image-3--mobile@2x.jpg 2x" alt="Фотография Седоны 'Дорога на север'." width="280" height="280">
               </picture>
             </a>
             <div class="gallery__info gallery__info--tablet-dark">
@@ -117,7 +121,9 @@
                 <span class="gallery__author">Автор фото: Петр</span>
               </div>
               <button class="gallery__likes-count" type="button" aria-label="Поставить лайк" aria-description="Всего 96">
-                <svg class="gallery__likes-count-icon" width="23" height="21" viewBox="0 0 23 21" fill="CurrentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"/></svg>
+                <svg class="gallery__likes-count-icon" width="23" height="21" fill="CurrentColor">
+                  <use href="img/stack.svg#like-icon"/>
+                </svg>
                 <span class="gallery__likes-count-text">96</span>
               </button>
             </div>
@@ -125,15 +131,15 @@
           <li class="gallery__item">
             <a class="gallery__link"  href="#">
               <picture>
-                <source type="image/avif" media="(min-width: 769px)" srcset="img/gallery__image-4--desktop.avif 1x, img/gallery__image-4--desktop@2x.avif 2x">
-                <source type="image/avif" media="(min-width: 321px)" srcset="img/gallery__image-4--tablet.avif 1x, img/gallery__image-4--tablet@2x.avif 2x">
-                <source type="image/avif" srcset="img/gallery__image-4--mobile.avif 1x, img/gallery__image-4--mobile@2x.avif 2x">
-                <source type="image/webp" media="(min-width: 769px)" srcset="img/gallery__image-4--desktop.webp 1x, img/gallery__image-4--desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 321px)" srcset="img/gallery__image-4--tablet.webp 1x, img/gallery__image-4--tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/gallery__image-4--mobile.webp 1x, img/gallery__image-4--mobile@2x.webp 2x">
+                <source type="image/avif" media="(min-width: 769px)" srcset="img/gallery__image-4--desktop.avif 1x, img/gallery__image-4--desktop@2x.avif 2x" width="400" height="267">
+                <source type="image/avif" media="(min-width: 321px)" srcset="img/gallery__image-4--tablet.avif 1x, img/gallery__image-4--tablet@2x.avif 2x" width="324" height="347">
+                <source type="image/avif" srcset="img/gallery__image-4--mobile.avif 1x, img/gallery__image-4--mobile@2x.avif 2x" width="280" height="280">
+                <source type="image/webp" media="(min-width: 769px)" srcset="img/gallery__image-4--desktop.webp 1x, img/gallery__image-4--desktop@2x.webp 2x" width="400" height="267">
+                <source type="image/webp" media="(min-width: 321px)" srcset="img/gallery__image-4--tablet.webp 1x, img/gallery__image-4--tablet@2x.webp 2x" width="324" height="347">
+                <source type="image/webp" srcset="img/gallery__image-4--mobile.webp 1x, img/gallery__image-4--mobile@2x.webp 2x" width="280" height="280">
                 <source media="(min-width: 769px)" srcset="img/gallery__image-4--desktop.jpg 1x, img/gallery__image-4--desktop@2x.jpg 2x" width="400" height="267">
                 <source media="(min-width: 321px)" srcset="img/gallery__image-4--tablet.jpg 1x, img/gallery__image-4--tablet@2x.jpg 2x" width="324" height="347">
-                <img class="gallery__image" src="img/gallery__image-4--mobile.jpg" srcset="img/gallery__image-4--mobile@2x.jpg 2x" alt="Фотография Седоны 'Мост дьявола'." width="280" height="280">
+                <img class="gallery__image" src="img/gallery__image-4--mobile.jpg" srcset="img/gallery__image-4--mobile.jpg 1x, img/gallery__image-4--mobile@2x.jpg 2x" alt="Фотография Седоны 'Мост дьявола'." width="280" height="280">
               </picture>
             </a>
             <div class="gallery__info">
@@ -142,7 +148,9 @@
                 <span class="gallery__author">Автор фото: Антон</span>
               </div>
               <button class="gallery__likes-count" type="button" aria-label="Поставить лайк" aria-description="Всего 254">
-                <svg class="gallery__likes-count-icon" width="23" height="21" viewBox="0 0 23 21" fill="CurrentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"/></svg>
+                <svg class="gallery__likes-count-icon" width="23" height="21" fill="CurrentColor">
+                  <use href="img/stack.svg#like-icon"/>
+                </svg>
                 <span class="gallery__likes-count-text">254</span>
               </button>
             </div>
@@ -158,15 +166,15 @@
           <button class="video-promotion__button" type="button" aria-label="Воспроизвести видео"></button>
           <a class="video-promotion__link" href="https://www.youtube.com/watch?v=4fCJTUchxqw&ab_channel=LivinginArizonaNow" target="_blank" rel="noopener noreferrer">
             <picture>
-              <source type="image/avif" media="(min-width: 769px)" srcset="img/video-promotion__image--desktop.avif 1x, img/video-promotion__image--desktop@2x.avif 2x">
-                <source type="image/avif" media="(min-width: 321px)" srcset="img/video-promotion__image--tablet.avif 1x, img/video-promotion__image--tablet@2x.avif 2x">
-                <source type="image/avif" srcset="img/video-promotion__image--mobile.avif 1x, img/video-promotion__image--mobile@2x.avif 2x">
-                <source type="image/webp" media="(min-width: 769px)" srcset="img/video-promotion__image--desktop.webp 1x, img/video-promotion__image--desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 321px)" srcset="img/video-promotion__image--tablet.webp 1x, img/video-promotion__image--tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/video-promotion__image--mobile.webp 1x, img/video-promotion__image--mobile@2x.webp 2x">
+              <source type="image/avif" media="(min-width: 769px)" srcset="img/video-promotion__image--desktop.avif 1x, img/video-promotion__image--desktop@2x.avif 2x" width="800" height="500">
+                <source type="image/avif" media="(min-width: 321px)" srcset="img/video-promotion__image--tablet.avif 1x, img/video-promotion__image--tablet@2x.avif 2x" width="648" height="500">
+                <source type="image/avif" srcset="img/video-promotion__image--mobile.avif 1x, img/video-promotion__image--mobile@2x.avif 2x" width="280" height="177">
+                <source type="image/webp" media="(min-width: 769px)" srcset="img/video-promotion__image--desktop.webp 1x, img/video-promotion__image--desktop@2x.webp 2x" width="800" height="500">
+                <source type="image/webp" media="(min-width: 321px)" srcset="img/video-promotion__image--tablet.webp 1x, img/video-promotion__image--tablet@2x.webp 2x" width="648" height="500">
+                <source type="image/webp" srcset="img/video-promotion__image--mobile.webp 1x, img/video-promotion__image--mobile@2x.webp 2x" width="280" height="177">
               <source media="(min-width: 769px)" srcset="img/video-promotion__image--desktop.jpg 1x, img/video-promotion__image--desktop@2x.jpg 2x" width="800" height="500">
               <source media="(min-width: 321px)" srcset="img/video-promotion__image--tablet.jpg 1x, img/video-promotion__image--tablet@2x.jpg 2x" width="648" height="500">
-              <img class="video-promotion__image" src="img/video-promotion__image--mobile.jpg" srcset="img/video-promotion__image--mobile@2x.jpg 2x" alt="Видео про Седону." width="280" height="177">
+              <img class="video-promotion__image" src="img/video-promotion__image--mobile.jpg" srcset="img/video-promotion__image--mobile.jpg 1x, img/video-promotion__image--mobile@2x.jpg 2x" alt="Видео про Седону." width="280" height="177">
             </picture>
           </a>
         </div>
@@ -193,7 +201,9 @@
       </ul>
       <small class="main-footer__copyrights">
         <a class="main-footer__copyrights-link" href="https://htmlacademy.ru">
-          <svg class="main-footer__copyrights-svg" width="27" height="35" viewBox="0 0 27 35" fill="CurrentColor" xmlns="http://www.w3.org/2000/svg"><path d="M13.65 0.449951H13.55L0.0500031 1.84995V26.55L13.55 34.5499L26.95 26.55V1.84995L13.65 0.449951ZM25.05 12.55L13.55 5.74995V5.64995H13.45L13.35 5.54995V5.64995L1.95 12.55V3.54995L13.45 2.34995L25.05 3.54995V12.55ZM13.45 7.24995L24.95 13.95L20.45 16.55L13.35 12.35V13.75L19.25 17.25L18.35 17.75L13.35 14.75V16.15L17.15 18.45L16.35 18.95L13.35 17.15V18.55L15.25 19.65L13.45 20.75L2.05 14.05L13.45 7.24995ZM1.95 15.55L13.35 22.35V23.35L5.45 18.65V20.05L13.45 24.85V25.95L5.45 21.25V22.65L13.45 27.45L21.55 22.55V17.35L24.95 15.35V25.35L13.45 32.25L1.95 25.45V15.55Z"/></svg>
+          <svg class="main-footer__copyrights-svg" width="27" height="35" fill="currentColor">
+            <use href="img/stack.svg#htmlacademy"/>
+          </svg>
           Разработано
         </a>
       </small>
