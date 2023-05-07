@@ -4,14 +4,14 @@
   display: grid;
   gap: 30px;
   text-align: center;
-  padding-top: 33px;
-  padding-bottom: 33px;
+  padding-top: 41px;
+  padding-bottom: 46px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 36px;
+    padding-top: 31px;
     padding-bottom: 36px;
     width: 100%;
   }
@@ -45,13 +45,18 @@
 
 .main-footer__social {
   margin: 0 auto;
+  margin-bottom: 8px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 5px;
+  }
 }
 
 .main-footer__copyrights-svg {
   position: absolute;
   width: 28px;
   height: 35px;
-  top: -7px;
+  top: -9px;
   right: 0;
 }
 

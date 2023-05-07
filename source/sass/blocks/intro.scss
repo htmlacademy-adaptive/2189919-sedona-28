@@ -3,7 +3,7 @@
 .intro {
   position: relative;
   overflow: hidden;
-  background-image: url("../../img/intro--mobile.jpg");
+  background-image: url("../img/intro--mobile.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11,7 +11,7 @@
   padding: 90px 0 85px;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../../img/intro--mobile@2x.jpg");
+    background-image: url("../img/intro--mobile@2x.jpg");
   }
 
   &::after {
@@ -28,7 +28,7 @@
   @media (min-width: $tablet-width) {
     &::after {
       height: 57px;
-      clip-path: polygon(0 100%, 0 15%, 10% 42%, 10% 0%, 50% 97%, 90% 0%, 90% 42%, 100% 15%, 100% 100%);
+      clip-path: polygon(0% 100%, 0% 30%, 5% 40%, 5% 0, 50% 100%, 95% 0, 95% 44%, 100% 30%, 100% 100%);
     }
   }
 
@@ -60,5 +60,8 @@
 .intro__image {
   display: block;
   margin: 0 auto;
-}
 
+  @media (min-width: $tablet-width) {
+    min-width: 461px;
+  }
+}

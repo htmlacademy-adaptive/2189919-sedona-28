@@ -5,14 +5,30 @@
 }
 
 .advantages__header {
+  position: relative;
   text-align: center;
-  padding: 32px 0;
+  padding: 33px 0 39px 0;
+
+  &::after {
+    content: "";
+    background-color: #ffffff;
+    position: absolute;
+    bottom: -13px;
+    left: -0.5%;
+    height: 27px;
+    width: 101%;
+    clip-path: polygon(50% 100%, 0 50%, 100% 50%);
+  }
 
   @media (min-width: $tablet-width) {
     br {
       display: none;
     }
-    padding: 48px 124px 58px;
+    padding: 48px 124px 56px 124px;
+
+    &::after {
+      display: none;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -26,11 +42,12 @@
 .advantages__title {
   display: block;
   margin: 0 auto;
-  margin-bottom: 35px;
+  margin-bottom: 36px;
   max-width: 260px;
 
   @media (min-width: $tablet-width) {
     max-width: 440px;
+    margin-bottom: 29px;
   }
 }
 
@@ -59,6 +76,7 @@
 
   @media (min-width: $tablet-width) {
     max-width: 150px;
+    margin-bottom: 24px;
   }
 }
 
@@ -167,17 +185,54 @@
   font-size: 14px;
   line-height: 21px;
   margin-top: 11px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 12px;
+  }
 }
 
 .advantages__info {
   padding: 37px 18px;
 
+  &--space-city,
+  &--space-devil {
+    padding: 48px 18px 39px 18px;
+  }
+
+  &--space-places,
+  &--space-road,
+  &--space-tourists {
+    padding: 24px 18px 24px 18px;
+  }
+
   @media (min-width: $tablet-width) {
     padding: 42px 33px 41px 33px;
+
+    &--space-city,
+    &--space-devil {
+      padding: 53px 18px 31px 18px;
+    }
+
+    &--space-places,
+    &--space-road,
+    &--space-tourists {
+      padding: 42px 18px 42px 18px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     padding: 52px 50px 52px 50px;
+
+    &--space-city,
+    &--space-devil {
+      padding: 53px 18px 31px 18px;
+    }
+
+    &--space-places,
+    &--space-road,
+    &--space-tourists {
+      padding: 24px 18px 24px 18px;
+    }
   }
 }
 
@@ -187,7 +242,7 @@
 
   @media (min-width: $tablet-width) {
     border-bottom: none;
-    margin: auto;
+    margin: 0;
   }
 }
 
@@ -204,6 +259,7 @@
   width: 100%;
   object-fit: cover;
   background-color: #d6d6d6;
+  border: none;
 
   @media (min-width: $tablet-width) {
     min-height: 256px;
@@ -212,10 +268,19 @@
 
 .advantages__sublist {
   text-align: left;
-  margin-bottom: 46px;
+  padding: 31px 18px 44px 18px;
 
   @media (min-width: $tablet-width) {
     text-align: center;
+    padding: 0 0 4px 0;
+  }
+}
+
+.advantages__subitem:not(:last-child) {
+  margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
   }
 }
 
@@ -226,17 +291,18 @@
 
   @media (min-width: $tablet-width) {
     text-align: center;
+    margin-bottom: 23px;
   }
 }
 
-.advantages__info--icon {
+.advantages__subitem--icon {
   position: relative;
   text-align: left;
-  padding: 23px 18px 25px 65px;
+  padding-left: 47px;
 
   @media (min-width: $tablet-width) {
     text-align: center;
-    padding: 60px 33px;
+    padding: 56px 33px;
   }
 
   @media (min-width: $desktop-width) {
@@ -250,29 +316,44 @@
     display: block;
     width: 40px;
     height: 40px;
-    top: 21px;
-    left: 16px;
+    top: -8px;
+    left: 0;
     background-size: 100% 100%;
 
     @media (min-width: $tablet-width) {
       position: static;
       width: 78px;
       height: 78px;
-      margin: 0 auto 24px;
     }
   }
 }
 
-.advantages__info--icon-house::before {
+.advantages__subitem--icon-house::before {
   background-image: url("../img/advantages.svg#house");
+  margin: 0 auto 24px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto 24px;
+  }
 }
 
-.advantages__info--icon-food::before {
+.advantages__subitem--icon-food::before {
   background-image: url("../img/advantages.svg#food");
+  margin: 0 auto 24px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto 22px;
+  }
 }
 
-.advantages__info--icon-souvenirs::before {
+.advantages__subitem--icon-souvenirs::before {
   background-image: url("../img/advantages.svg#souvenirs");
+  margin: 0 auto 24px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto 14px;
+    margin-top: 5px;
+  }
 }
 
 .advantages__subitem-text {
@@ -290,5 +371,20 @@
     @media (min-width: $desktop-width) {
       display: block;
     }
+  }
+}
+
+.advantages__item--decor {
+  position: relative;
+
+  &::after {
+    content: "";
+    background-color: #ffffff;
+    position: absolute;
+    top: 0;
+    left: -0.5%;
+    height: 27px;
+    width: 101%;
+    clip-path: polygon(0 100%, 0 0, 50% 100%, 100% 0%, 100% 100%);
   }
 }
