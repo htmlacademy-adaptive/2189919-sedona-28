@@ -9,29 +9,32 @@
   @media (min-width: $tablet-width) {
     margin: 0 auto;
     max-width: 450px;
-    margin-bottom: 71px;
+    margin-bottom: 90px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 88px;
   }
 }
 
 .video-promotion__title {
-  margin-bottom: 37px;
+  margin-bottom: 27px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 35px;
+    margin-bottom: 31px;
   }
 }
 
 .video-promotion {
   text-align: center;
-  padding-top: 17px;
+  padding: 17px 20px 0 20px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 40px;
-    padding-top: 63px;
+    padding: 57px 60px 40px 60px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 84px;
+    padding: 60px 201px 84px 200px;
   }
 }
 

@@ -3,9 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="img/favicons/favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon.png">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <title>Форма отзыва</title>
   </head>
   <body class="page__body">
@@ -19,7 +21,7 @@
         </button>
         <span class="main-navigation__logo">
           <span class="visually-hidden">Переход на главную страницу.</span>
-          <img src="img/logo.svg" alt="Логотип сайта.">
+          <img class="main-navigation__logo-image" src="img/logo.svg" alt="Логотип сайта." width="185" height="96">
         </span>
         <ul class="main-navigation__list">
           <li class="main-navigation__item">
@@ -40,14 +42,14 @@
     <main class="page__main">
       <section class="intro intro-alternative">
         <h2 class="visually-hidden">Форма заполнения отзыва.</h2>
-        <img class="intro__image" src="img/intro__image-feedback.svg" alt="Седона" width="229" height="39">
+        <img class="intro__image" src="img/intro-svg-alternative.svg" alt="Седона" width="229" height="39">
       </section>
       <form class="form container" action="https://echo.htmlacademy.ru/" method="post">
         <header class="form__header">
           <h2 class="form__heading heading">Оставьте свой отзыв</h2>
           <p class="form__text text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </header>
-        <div class="form--columns">
+        <div class="form__container-columns">
           <fieldset class="form__fieldset form__fieldset--no-decoration  form__fieldset--column form__fieldset--indent-m">
             <legend class="form__title form__title--no-decoration subheading">Представьтесь:</legend>
             <label class="form__label">
@@ -59,7 +61,7 @@
               <input class="form__label-input" type="text" name="surname" placeholder="Введите фамилию" value="Пустота" required>
             </label>
             <label class="form__label">
-              <span class="form__label-name text">Отчество*:</span>
+              <span class="form__label-name text">Отчество:</span>
               <input class="form__label-input" type="text" name="patronymic" placeholder="Введите отчество" value="Викторович" required>
             </label>
           </fieldset>
@@ -75,8 +77,8 @@
             </label>
           </fieldset>
         </div>
-        <fieldset class="form__fieldset form__fieldset--radio form__fieldset--indent-tablet-big form__fieldset--indent-xs">
-          <legend class="form__title subheading">Ваше общее впечатление:</legend>
+        <fieldset class="form__fieldset form__fieldset--radio form__fieldset--indent-big form__fieldset--indent-xs">
+          <legend class="form__title form__title--space-impression subheading">Ваше общее впечатление:</legend>
           <div class="form__label-radio--container">
             <label class="form__label-radio">
               <input class="visually-hidden form__label-radio-input" type="radio" name="impression" value="positive" checked>
@@ -95,13 +97,13 @@
             </label>
           </div>
         </fieldset>
-        <fieldset class="form__fieldset form__fieldset--checkbox form__fieldset--indent-tablet-small form__fieldset--indent-xs">
-          <legend class="form__title subheading">Посещенные<br> достопримечательности:</legend>
+        <fieldset class="form__fieldset form__fieldset--checkbox form__fieldset--indent-medium form__fieldset--indent-xs">
+          <legend class="form__title form__title--space-attractions subheading">Посещенные<br> достопримечательности:</legend>
           <div class="form__label-checbox--container">
             <label class="form__label-checkbox">
               <input class="visually-hidden form__label-checkbox-input" type="checkbox" name="attractions" value="devils-bridge" checked>
               <span class="form__label-checbox-control"></span>
-              <span class="form__label-checbox-name">Мост дьявола</span>
+              <span class="form__label-checbox-name">Мост Дьявола</span>
             </label>
             <label class="form__label-checkbox">
               <input class="visually-hidden form__label-checkbox-input" type="checkbox" name="attractions" value="bell-rock" checked>
@@ -120,8 +122,8 @@
             </label>
           </div>
         </fieldset>
-        <fieldset class="form__fieldset form__fieldset--indent-tablet-big form__fieldset--indent-l">
-          <legend class="form__title form__title--special-indent subheading">Опишите свои эмоции:</legend>
+        <fieldset class="form__fieldset form__fieldset--indent-small form__fieldset--indent-l form__fieldset--textarea">
+          <legend class="form__title form__title--space-emotions subheading">Опишите свои эмоции:</legend>
           <label class="form__label-textarea">
             <textarea class="form__label-textarea-field" name="message" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
           </label>
@@ -129,6 +131,14 @@
         <div class="form__button form__button-container">
           <button class="form__button button" type="submit">Отправить отзыв</button>
           <span class="form__warning">* — обязательные поля</span>
+        </div>
+        <div class="form__modal-overlay"></div>
+        <div class="form__modal">
+          <h2 class="form__modal-title">Ваш отзыв отправлен!</h2>
+          <p class="form__modal-message">Спасибо за ваше участие, ваш отзыв уже поступил к нам. <br>В&nbsp;ближайшее время мы опубликуем его на сайте.</p>
+          <div class="form__modal-controls">
+            <button class="form__modal-button button js-modal-close" type="button">Закрыть окно</button>
+          </div>
         </div>
       </form>
     </main>
@@ -153,30 +163,13 @@
       </ul>
       <small class="main-footer__copyrights">
         <a class="main-footer__copyrights-link" href="https://htmlacademy.ru">
-          <svg class="main-footer__copyrights-svg" width="27" height="35" viewBox="0 0 27 35" fill="CurrentColor" xmlns="http://www.w3.org/2000/svg"><path d="M13.65 0.449951H13.55L0.0500031 1.84995V26.55L13.55 34.5499L26.95 26.55V1.84995L13.65 0.449951ZM25.05 12.55L13.55 5.74995V5.64995H13.45L13.35 5.54995V5.64995L1.95 12.55V3.54995L13.45 2.34995L25.05 3.54995V12.55ZM13.45 7.24995L24.95 13.95L20.45 16.55L13.35 12.35V13.75L19.25 17.25L18.35 17.75L13.35 14.75V16.15L17.15 18.45L16.35 18.95L13.35 17.15V18.55L15.25 19.65L13.45 20.75L2.05 14.05L13.45 7.24995ZM1.95 15.55L13.35 22.35V23.35L5.45 18.65V20.05L13.45 24.85V25.95L5.45 21.25V22.65L13.45 27.45L21.55 22.55V17.35L24.95 15.35V25.35L13.45 32.25L1.95 25.45V15.55Z"/></svg>
+          <svg class="main-footer__copyrights-svg" width="27" height="35" fill="currentColor">
+            <use href="img/stack.svg#htmlacademy"/>
+          </svg>
           Разработано
         </a>
       </small>
     </footer>
-
-    <!-- <div class="modal-container">
-      <div class="modal">
-        <h2 class="modal__title heading">Ваш отзыв отправлен!</h2>
-        <p class="modal__text text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
-        <div class="modal__control">
-          <button class="modal__button button" type="button">Закрыть окно</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal-container">
-      <div class="modal modal-error">
-        <h2 class="modal__title heading">Что-то пошло не так!</h2>
-        <p class="modal__text text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-        <div class="modal__control">
-          <button class="modal__button button" type="button">ОК</button>
-        </div>
-      </div>
-    </div> -->
     <script src="js/index.js"></script>
+    <script src="js/form.js"></script>
   </body>

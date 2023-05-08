@@ -4,16 +4,26 @@
   display: grid;
   gap: 30px;
   text-align: center;
-  padding-top: 33px;
-  padding-bottom: 33px;
+  padding-top: 41px;
+  padding-bottom: 46px;
+
+  &--gallery {
+    padding-top: 35px;
+    padding-bottom: 38px;
+  }
 
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 36px;
+    padding-top: 31px;
     padding-bottom: 36px;
     width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 120px;
+    padding-right: 120px;
   }
 }
 
@@ -45,13 +55,22 @@
 
 .main-footer__social {
   margin: 0 auto;
+  margin-bottom: 8px;
+
+  &--gallery {
+    margin-bottom: 7px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 5px;
+  }
 }
 
 .main-footer__copyrights-svg {
   position: absolute;
   width: 28px;
   height: 35px;
-  top: -7px;
+  top: -9px;
   right: 0;
 }
 

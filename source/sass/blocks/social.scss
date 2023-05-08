@@ -25,14 +25,14 @@
   }
 
   &--vk::before {
-    background-image: url("../../img/vk.svg");
+    background-image: url("../img/social.svg#vk");
   }
 
   &--telegram::before {
-    background-image: url("../../img/telegram.svg");
+    background-image: url("../img/social.svg#telegram");
   }
 
   &--youtube::before {
-    background-image: url("../../img/youtube.svg");
+    background-image: url("../img/social.svg#youtube");
   }
 }
