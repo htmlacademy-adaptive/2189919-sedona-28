@@ -6,6 +6,8 @@
     <link rel="icon" href="favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <title>Галерея</title>
   </head>
   <body class="page__body">
@@ -58,7 +60,7 @@
                 <source type="image/webp" srcset="img/gallery__image-1--mobile.webp 1x, img/gallery__image-1--mobile@2x.webp 2x" width="280" height="280">
                 <source media="(min-width: 769px)" srcset="img/gallery__image-1--desktop.jpg 1x, img/gallery__image-1--desktop@2x.jpg 2x" width="1200" height="400">
                 <source media="(min-width: 321px)" srcset="img/gallery__image-1--tablet.jpg 1x, img/gallery__image-1--tablet@2x.jpg 2x" width="648" height="400">
-                <img class="gallery__image" src="img/gallery__image-1--mobile.jpg" srcset="img/gallery__image-1--mobile.jpg 1x, img/gallery__image-1--mobile@2x.jpg 2x" alt="Фотография Седоны 'Неродные просторы'." width="280" height="280">
+                <img class="gallery__image" src="img/gallery__image-1--mobile.jpg" srcset="img/gallery__image-1--mobile.jpg 1x, img/gallery__image-1--mobile@2x.jpg 2x" loading="lazy" alt="Фотография Седоны 'Неродные просторы'." width="280" height="280">
               </picture>
             </a>
             <div class="gallery__info gallery__info--wide">
@@ -85,7 +87,7 @@
                 <source type="image/webp" srcset="img/gallery__image-2--mobile.webp 1x, img/gallery__image-2--mobile@2x.webp 2x" width="280" height="280">
                 <source media="(min-width: 769px)" srcset="img/gallery__image-2--desktop.jpg 1x, img/gallery__image-2--desktop@2x.jpg 2x" width="400" height="267">
                 <source media="(min-width: 321px)" srcset="img/gallery__image-2--tablet.jpg 1x, img/gallery__image-2--tablet@2x.jpg 2x" width="324" height="347">
-                <img class="gallery__image" src="img/gallery__image-2--mobile.jpg" srcset="img/gallery__image-2--mobile.jpg 1x, img/gallery__image-2--mobile@2x.jpg 2x" alt="Фотография Седоны 'Местная растительность'." width="280" height="280">
+                <img class="gallery__image" src="img/gallery__image-2--mobile.jpg" srcset="img/gallery__image-2--mobile.jpg 1x, img/gallery__image-2--mobile@2x.jpg 2x" loading="lazy" alt="Фотография Седоны 'Местная растительность'." width="280" height="280">
               </picture>
             </a>
             <div class="gallery__info">
@@ -112,7 +114,7 @@
                 <source type="image/webp" srcset="img/gallery__image-3--mobile.webp 1x, img/gallery__image-3--mobile@2x.webp 2x" width="280" height="280">
                 <source media="(min-width: 769px)" srcset="img/gallery__image-3--desktop.jpg 1x, img/gallery__image-3--desktop@2x.jpg 2x" width="400" height="267">
                 <source media="(min-width: 321px)" srcset="img/gallery__image-3--tablet.jpg 1x, img/gallery__image-3--tablet@2x.jpg 2x" width="324" height="347">
-                <img class="gallery__image" src="img/gallery__image-3--mobile.jpg" srcset="img/gallery__image-3--mobile.jpg 1x, img/gallery__image-3--mobile@2x.jpg 2x" alt="Фотография Седоны 'Дорога на север'." width="280" height="280">
+                <img class="gallery__image" src="img/gallery__image-3--mobile.jpg" srcset="img/gallery__image-3--mobile.jpg 1x, img/gallery__image-3--mobile@2x.jpg 2x" loading="lazy" alt="Фотография Седоны 'Дорога на север'." width="280" height="280">
               </picture>
             </a>
             <div class="gallery__info gallery__info--tablet-dark">
@@ -139,7 +141,7 @@
                 <source type="image/webp" srcset="img/gallery__image-4--mobile.webp 1x, img/gallery__image-4--mobile@2x.webp 2x" width="280" height="280">
                 <source media="(min-width: 769px)" srcset="img/gallery__image-4--desktop.jpg 1x, img/gallery__image-4--desktop@2x.jpg 2x" width="400" height="267">
                 <source media="(min-width: 321px)" srcset="img/gallery__image-4--tablet.jpg 1x, img/gallery__image-4--tablet@2x.jpg 2x" width="324" height="347">
-                <img class="gallery__image" src="img/gallery__image-4--mobile.jpg" srcset="img/gallery__image-4--mobile.jpg 1x, img/gallery__image-4--mobile@2x.jpg 2x" alt="Фотография Седоны 'Мост дьявола'." width="280" height="280">
+                <img class="gallery__image" src="img/gallery__image-4--mobile.jpg" srcset="img/gallery__image-4--mobile.jpg 1x, img/gallery__image-4--mobile@2x.jpg 2x" loading="lazy" alt="Фотография Седоны 'Мост дьявола'." width="280" height="280">
               </picture>
             </a>
             <div class="gallery__info">
@@ -174,7 +176,7 @@
                 <source type="image/webp" srcset="img/video-promotion__image--mobile.webp 1x, img/video-promotion__image--mobile@2x.webp 2x" width="280" height="177">
               <source media="(min-width: 769px)" srcset="img/video-promotion__image--desktop.jpg 1x, img/video-promotion__image--desktop@2x.jpg 2x" width="800" height="500">
               <source media="(min-width: 321px)" srcset="img/video-promotion__image--tablet.jpg 1x, img/video-promotion__image--tablet@2x.jpg 2x" width="648" height="500">
-              <img class="video-promotion__image" src="img/video-promotion__image--mobile.jpg" srcset="img/video-promotion__image--mobile.jpg 1x, img/video-promotion__image--mobile@2x.jpg 2x" alt="Видео про Седону." width="280" height="177">
+              <img class="video-promotion__image" src="img/video-promotion__image--mobile.jpg" srcset="img/video-promotion__image--mobile.jpg 1x, img/video-promotion__image--mobile@2x.jpg 2x" loading="lazy" alt="Видео про Седону." width="280" height="177">
             </picture>
           </a>
         </div>

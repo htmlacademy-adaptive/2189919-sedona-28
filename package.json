@@ -21,22 +21,22 @@
     "gulp-svgmin": "^4.1.0",
     "gulp-w3c-html-validator": "^5.2.0",
     "postcss": "^8.4.23",
-    "postcss-calc": "^9.0.0",
+    "postcss-calc": "^9.0.1",
     "postcss-csso": "^6.0.1",
     "postcss-preset-env": "^8.3.2",
     "postcss-sort-media-queries": "^5.1.0",
     "sass": "^1.62.1",
     "stylelint": "13.13.1",
-    "stylelint-config-htmlacademy": "0.1.11"
+    "stylelint-config-htmlacademy": "^0.1.11"
   },
   "scripts": {
-    "editorconfig": "editorconfig-cli",
     "build": "gulp build",
-    "start": "gulp",
-    "cache:clear": "gilp clearCache",
+    "cache:clear": "gulp clearCache",
+    "editorconfig": "editorconfig-cli",
     "fix:scss": "stylelint \"source/sass/**/*.scss\" --custom-syntax postcss-scss --fix",
     "lint": "gulp lint && npm run lint:scss && npm run editorconfig",
-    "lint:scss": "stylelint \"source/sass/**/*.scss\" --custom-syntax postcss-scss"
+    "lint:scss": "stylelint \"source/sass/**/*.scss\" --custom-syntax postcss-scss",
+    "start": "gulp"
   },
   "browserslist": [
     "last 2 versions",
