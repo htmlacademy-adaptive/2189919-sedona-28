@@ -1,7 +1,7 @@
 @use "../global/variables" as *;
 
 .container {
-  padding: 0 18px;
+  padding: 0 20px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {

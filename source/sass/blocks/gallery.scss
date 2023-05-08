@@ -106,12 +106,12 @@
     position: absolute;
     content: "";
     height: 1px;
-    width: calc(100% + 36px);
+    width: calc(100% + 44px);
     background-color: #e5e5e5;
     top: 0;
-    left: -18px;
+    left: -22px;
 
-    @media (min-width: $tablet-width) {
+    @media (min-width: 600px) {
       display: none;
     }
   }
@@ -122,12 +122,12 @@
     position: absolute;
     content: "";
     height: 1px;
-    width: calc(100% + 36px);
+    width: calc(100% + 44px);
     background-color: #e5e5e5;
     bottom: 0;
-    left: -18px;
+    left: -22px;
 
-    @media (min-width: $tablet-width) {
+    @media (min-width: 600px) {
       display: none;
     }
   }

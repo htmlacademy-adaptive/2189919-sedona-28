@@ -47,7 +47,7 @@
           <h2 class="form__heading heading">Оставьте свой отзыв</h2>
           <p class="form__text text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </header>
-        <div class="form--columns">
+        <div class="form__container-columns">
           <fieldset class="form__fieldset form__fieldset--no-decoration  form__fieldset--column form__fieldset--indent-m">
             <legend class="form__title form__title--no-decoration subheading">Представьтесь:</legend>
             <label class="form__label">
@@ -59,7 +59,7 @@
               <input class="form__label-input" type="text" name="surname" placeholder="Введите фамилию" value="Пустота" required>
             </label>
             <label class="form__label">
-              <span class="form__label-name text">Отчество*:</span>
+              <span class="form__label-name text">Отчество:</span>
               <input class="form__label-input" type="text" name="patronymic" placeholder="Введите отчество" value="Викторович" required>
             </label>
           </fieldset>
@@ -75,8 +75,8 @@
             </label>
           </fieldset>
         </div>
-        <fieldset class="form__fieldset form__fieldset--radio form__fieldset--indent-tablet-big form__fieldset--indent-xs">
-          <legend class="form__title subheading">Ваше общее впечатление:</legend>
+        <fieldset class="form__fieldset form__fieldset--radio form__fieldset--indent-big form__fieldset--indent-xs">
+          <legend class="form__title form__title--space-impression subheading">Ваше общее впечатление:</legend>
           <div class="form__label-radio--container">
             <label class="form__label-radio">
               <input class="visually-hidden form__label-radio-input" type="radio" name="impression" value="positive" checked>
@@ -95,13 +95,13 @@
             </label>
           </div>
         </fieldset>
-        <fieldset class="form__fieldset form__fieldset--checkbox form__fieldset--indent-tablet-small form__fieldset--indent-xs">
-          <legend class="form__title subheading">Посещенные<br> достопримечательности:</legend>
+        <fieldset class="form__fieldset form__fieldset--checkbox form__fieldset--indent-medium form__fieldset--indent-xs">
+          <legend class="form__title form__title--space-attractions subheading">Посещенные<br> достопримечательности:</legend>
           <div class="form__label-checbox--container">
             <label class="form__label-checkbox">
               <input class="visually-hidden form__label-checkbox-input" type="checkbox" name="attractions" value="devils-bridge" checked>
               <span class="form__label-checbox-control"></span>
-              <span class="form__label-checbox-name">Мост дьявола</span>
+              <span class="form__label-checbox-name">Мост Дьявола</span>
             </label>
             <label class="form__label-checkbox">
               <input class="visually-hidden form__label-checkbox-input" type="checkbox" name="attractions" value="bell-rock" checked>
@@ -120,8 +120,8 @@
             </label>
           </div>
         </fieldset>
-        <fieldset class="form__fieldset form__fieldset--indent-tablet-big form__fieldset--indent-l">
-          <legend class="form__title form__title--special-indent subheading">Опишите свои эмоции:</legend>
+        <fieldset class="form__fieldset form__fieldset--indent-small form__fieldset--indent-l form__fieldset--textarea">
+          <legend class="form__title form__title--space-emotions subheading">Опишите свои эмоции:</legend>
           <label class="form__label-textarea">
             <textarea class="form__label-textarea-field" name="message" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
           </label>
