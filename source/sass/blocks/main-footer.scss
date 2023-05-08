@@ -7,6 +7,11 @@
   padding-top: 41px;
   padding-bottom: 46px;
 
+  &--gallery {
+    padding-top: 35px;
+    padding-bottom: 38px;
+  }
+
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
@@ -51,6 +56,10 @@
 .main-footer__social {
   margin: 0 auto;
   margin-bottom: 8px;
+
+  &--gallery {
+    margin-bottom: 7px;
+  }
 
   @media (min-width: $tablet-width) {
     margin-top: 5px;

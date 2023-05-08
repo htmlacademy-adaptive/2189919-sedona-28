@@ -21,11 +21,24 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 101px 0 120px;
+    padding: 101px 15px 121px 10px;
     background-image: url("../img/intro-alternative--desktop.jpg");
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/intro-alternative--desktop@2x.jpg");
     }
+  }
+}
+
+.intro-alternative__image {
+  display: block;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    min-width: 461px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 459px;
   }
 }
