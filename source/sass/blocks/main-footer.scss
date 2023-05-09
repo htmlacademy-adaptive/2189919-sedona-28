@@ -50,8 +50,18 @@
 
   &:disabled {
     pointer-events: none;
+    opacity: 0.3;
   }
 }
+
+.main-footer__copyrights-svg {
+  position: absolute;
+  width: 28px;
+  height: 35px;
+  top: -9px;
+  right: 0;
+}
+
 
 .main-footer__social {
   margin: 0 auto;
@@ -64,13 +74,5 @@
   @media (min-width: $tablet-width) {
     margin-top: 5px;
   }
-}
-
-.main-footer__copyrights-svg {
-  position: absolute;
-  width: 28px;
-  height: 35px;
-  top: -9px;
-  right: 0;
 }
 
