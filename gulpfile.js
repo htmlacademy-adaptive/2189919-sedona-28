@@ -11,5 +11,3 @@ export const clearCache = cache.clearAll;
 
 export default gulp.series(cleanBuild, setDev, initialBuild, startServer);
 export const build = gulp.series(cleanBuild, setProd, initialBuild);
-
-

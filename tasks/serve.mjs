@@ -13,35 +13,35 @@ const server = browserSync.create();
  * @type {browserSync.Options}
  */
 const SERVER_OPTIONS = {
-	server: "build",
-	notify: true,
-	open: true,
-	cors: true,
-	watch: true,
+  server: "build",
+  notify: true,
+  open: true,
+  cors: true,
+  watch: true,
 };
 
 const streamStyles = () => compileSass().pipe(server.stream());
 
 async function serve() {
-	server.init(SERVER_OPTIONS);
+  server.init(SERVER_OPTIONS);
 
-	gulp.watch("source/pages/**/*.html", processMarkup);
-	gulp.watch("source/public/**/*", copyAssets);
-	gulp.watch("source/sass/**/*.scss", streamStyles);
-	gulp.watch("source/js/**/*.{js,ts}", compileScripts);
-	gulp.watch("source/images/**/*.{png,jpg}", processImages);
-	gulp.watch("source/images/**/*.svg", optimizeVector);
-	gulp.watch("source/icons/**/*.svg", createStack);
+  gulp.watch("source/pages/**/*.html", processMarkup);
+  gulp.watch("source/public/**/*", copyAssets);
+  gulp.watch("source/sass/**/*.scss", streamStyles);
+  gulp.watch("source/js/**/*.{js,ts}", compileScripts);
+  gulp.watch("source/images/**/*.{png,jpg}", processImages);
+  gulp.watch("source/images/**/*.svg", optimizeVector);
+  gulp.watch("source/icons/**/*.svg", createStack);
 }
 
 const initialBuild = gulp.parallel(
-	processMarkup,
-	copyAssets,
-	compileSass,
-	compileScripts,
-	processImages,
-	createStack,
-	optimizeVector
+  processMarkup,
+  copyAssets,
+  compileSass,
+  compileScripts,
+  processImages,
+  createStack,
+  optimizeVector
 );
 const startServer = gulp.series(initialBuild, serve);
 

@@ -50,4 +50,3 @@ document.body.addEventListener('keydown', (e) => {
     modalClose();
   };
 }, false);
-
