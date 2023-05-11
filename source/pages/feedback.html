@@ -13,16 +13,15 @@
   <body class="page__body">
     <h1 class="visually-hidden">Оставьте свой отзыв.</h1>
     <header class="main-header">
-      <nav class="main-navigation main-navigation--closed">
-        <!-- Чтобы проверить состояние сайта при поломке JS необходимо добавить на <nav> класс "main-navigation--no-js" -->
+      <nav class="main-navigation main-navigation--closed main-navigation--no-js">
         <button class="main-navigation__button" type="button">
           <span class="visually-hidden">Открыть меню.</span>
           <span class="main-navigation__button-lines"></span>
         </button>
-        <span class="main-navigation__logo">
+        <a class="main-navigation__logo" href="index.html" tabindex="-1">
           <span class="visually-hidden">Переход на главную страницу.</span>
           <img class="main-navigation__logo-image" src="img/logo.svg" alt="Логотип сайта." width="185" height="96">
-        </span>
+        </a>
         <ul class="main-navigation__list">
           <li class="main-navigation__item">
             <a class="main-navigation__link" href="index.html">Главная</a>
