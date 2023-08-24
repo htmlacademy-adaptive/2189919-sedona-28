@@ -85,6 +85,16 @@
   }
 }
 
+@-moz-document url-prefix("") {
+  .form__title {
+    @media (min-width: $tablet-width) {
+      margin: 0 auto;
+      margin-bottom: 27px;
+      margin-top: 0;
+    }
+  }
+}
+
 .form__fieldset--column,
 .form__label,
 .form__fieldset--radio,
@@ -307,6 +317,14 @@
   }
 }
 
+@-moz-document url-prefix("") {
+  .form__fieldset {
+    @media (min-width: $tablet-width) {
+      position: relative;
+    }
+  }
+}
+
 .form__label-radio-container {
   display: flex;
   flex-direction: column;
@@ -501,6 +519,7 @@
 .form__label-name {
   padding-left: 16px;
 }
+
 
 //Модальное окно
 

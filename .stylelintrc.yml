@@ -33,8 +33,8 @@ rules:
   keyframe-declaration-no-important : true
   length-zero-no-unit:
     - true
-    - ignore: ['custom-properties']
-      ignoreFunctions:  ['/^--/']
+    - ignore: ["custom-properties"]
+      ignoreFunctions:  ["/^--/""]
 
   max-nesting-depth : [2, { ignoreAtRules: [media] }]
   media-feature-name-no-vendor-prefix: true
